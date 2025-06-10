@@ -1,0 +1,3 @@
+[submodule "letopt"]
+	path = src/letopt
+	url = https://github.com/imaami/letopt.git
