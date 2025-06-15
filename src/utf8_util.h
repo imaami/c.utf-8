@@ -35,8 +35,4 @@
 # define utf8_nonnull_out
 #endif /* _MSC_VER */
 
-/** @brief Calculate the element count of an array.
- */
-#define utf8_array_size(x) (sizeof(x) / sizeof((x)[0]))
-
 #endif /* CUTF8_SRC_UTF8_UTIL_H_ */

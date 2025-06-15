@@ -3,12 +3,20 @@
  *
  * @author Juuso Alasuutari
  */
+#ifndef __cplusplus
+
+#ifdef _WIN32
+# define _CRT_SECURE_NO_WARNINGS
+# define WIN32_LEAN_AND_MEAN
+#endif
+
 #include <errno.h>
 #include <inttypes.h>
 #include <stdio.h>
 #include <string.h>
 
-#include "utf8_priv.h"
+#include "utf8_impl.h"
+
 #include "utf8_graph.h"
 
 #if utf8_clang_at_least_version(21)
@@ -67,7 +75,7 @@ utf8_graph (char              *dst,
 	if (!dst)
 		return nullptr;
 
-	for (size_t i = 0; i < utf8_array_size(utf8_range); ++i) {
+	for (size_t i = 0; i < array_size(utf8_range); ++i) {
 		unsigned a = utf8_range[i][0];
 		unsigned b = utf8_range[i][1];
 		unsigned c = utf8_range[i][2];
@@ -133,8 +141,7 @@ utf8_graph (char              *dst,
 			return nullptr;
 	}
 
-	for (size_t src_idx = 0;
-	     src_idx < utf8_array_size(utf8_dst); ++src_idx) {
+	for (size_t src_idx = 0; src_idx < array_size(utf8_dst); ++src_idx) {
 		if (!(utf8_range[src_idx][1] +
 		      utf8_range[src_idx][3]))
 			continue;
@@ -160,3 +167,5 @@ utf8_graph (char              *dst,
 
 	return string_copy(dst, end, "}\n", err);
 }
+
+#endif /* !__cplusplus */

@@ -10,30 +10,22 @@
 # define utf8_v_clang() UTF8_GEN_V(__clang_major__,    \
                                    __clang_minor__,    \
                                    __clang_patchlevel__)
-# define utf8_clang_equal_to_version(...) UTF8_CMP_V_(==,clang,__VA_ARGS__)
 # define utf8_clang_at_least_version(...) UTF8_CMP_V_(>=,clang,__VA_ARGS__)
 # define utf8_clang_older_than_version(...) UTF8_CMP_V_(<,clang,__VA_ARGS__)
-# define utf8_clang_not_version(...) UTF8_CMP_V_(!=,clang,__VA_ARGS__)
 #else
-# define utf8_clang_equal_to_version(...) 0
 # define utf8_clang_at_least_version(...) 0
 # define utf8_clang_older_than_version(...) 0
-# define utf8_clang_not_version(...) 0
 #endif
 
 #if !defined __clang_major__ && defined __GNUC__
 # define utf8_v_gcc() UTF8_GEN_V(__GNUC__,          \
                                  __GNUC_MINOR__,    \
                                  __GNUC_PATCHLEVEL__)
-# define utf8_gcc_equal_to_version(...) UTF8_CMP_V_(==,gcc,__VA_ARGS__)
 # define utf8_gcc_at_least_version(...) UTF8_CMP_V_(>=,gcc,__VA_ARGS__)
 # define utf8_gcc_older_than_version(...) UTF8_CMP_V_(<,gcc,__VA_ARGS__)
-# define utf8_gcc_not_version(...) UTF8_CMP_V_(!=,gcc,__VA_ARGS__)
 #else
-# define utf8_gcc_equal_to_version(...) 0
 # define utf8_gcc_at_least_version(...) 0
 # define utf8_gcc_older_than_version(...) 0
-# define utf8_gcc_not_version(...) 0
 #endif
 
 #if defined utf8_v_clang || defined utf8_v_gcc

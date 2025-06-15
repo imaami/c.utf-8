@@ -6,6 +6,8 @@
 #ifndef CUTF8_SRC_UTF8_H_
 #define CUTF8_SRC_UTF8_H_
 
+#ifndef __cplusplus
+
 #include <stddef.h>
 #include <stdint.h>
 
@@ -286,4 +288,5 @@ utf8_expects_leading_byte (struct utf8 const *const u8p)
  */
 #include "utf8_priv.h"
 
+#endif /* !__cplusplus */
 #endif /* CUTF8_SRC_UTF8_H_ */

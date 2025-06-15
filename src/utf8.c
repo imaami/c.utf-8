@@ -3,57 +3,20 @@
  *
  * @author Juuso Alasuutari
  */
+#ifndef __cplusplus
+
+#ifdef _WIN32
+# define _CRT_SECURE_NO_WARNINGS
+# define WIN32_LEAN_AND_MEAN
+#endif
+
 #include <assert.h>
 #include <errno.h>
 #include <inttypes.h>
+
+#include "utf8_impl.h"
+
 #ifdef DEBUG
-# include <stdio.h>
-#endif
-
-#include "utf8_priv.h"
-#include "utf8_util.h"
-
-#ifdef _MSC_VER
-# define __attribute__(...)
-#endif /* _MSC_VER */
-
-#ifndef __has_builtin
-# define __has_builtin(...) 0
-#endif /* !__has_builtin */
-
-/** @brief Assume that a value is within a certain range.
- */
-#if __has_builtin(__builtin_assume)
-# define assume_value_bits(x, mask) \
-        __builtin_assume((x) == ((x) & (typeof(x))(mask)))
-#else
-# define assume_value_bits(x, mask)
-#endif /* __builtin_assume */
-
-/**
- * @brief Check if an integer value is negative without getting warning
- *        spam if the type of the value is unsigned.
- *
- * If `x` is an unsigned integer type the macro expands to what should
- * be a compile-time constant expression 0, otherwise to `x < 0`. In
- * the latter case `x` is assumed to be a signed integer.
- *
- * @note The `_Generic` expression used to implement this macro only has
- *       explicit cases for the old school C unsigned integer types and
- *       a default case for everything else.
- *
- * @param x An integral-typed value.
- */
-#define is_negative(x) (_Generic((x), \
-        default:(x), unsigned char:1, \
-        unsigned short:1, unsigned:1, \
-        typeof(1UL):1,typeof(1ULL):1) < (typeof(x))0)
-
-#ifndef DEBUG
-# define pr_(...)
-#else /* DEBUG */
-# define pr_(fmt, ...) (void)fprintf(stderr, fmt "\n", __VA_ARGS__)
-
 static utf8_const_inline char const *
 utf8_st8_name (enum utf8_st8 st8)
 {
@@ -63,7 +26,7 @@ utf8_st8_name (enum utf8_st8 st8)
 		#undef F
 	};
 
-	if (!is_negative(st8) && st8 < utf8_array_size(name))
+	if (!is_negative(st8) && st8 < array_size(name))
 		return name[st8];
 
 	return nullptr;
@@ -355,3 +318,5 @@ utf8_parse_next_code_point (struct utf8 *const  u8p,
 
 	return ptr;
 }
+
+#endif /* !__cplusplus */

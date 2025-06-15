@@ -9,26 +9,13 @@
 #include "utf8_compiler.h"
 #include "utf8_pragma.h"
 
-#ifdef _WIN32
-# define _CRT_SECURE_NO_WARNINGS
-# define WIN32_LEAN_AND_MEAN
-#endif
-
 #ifndef __cplusplus
 
 # undef HAVE_C23_BOOL
-# undef HAVE_C23_CONSTEXPR
-# undef HAVE_C23_NULLPTR
 
 # if __STDC_VERSION__ >= 202000L && !defined __INTELLISENSE__
 #  if utf8_gcc_at_least_version(13,1) || utf8_clang_at_least_version(15)
 #   define HAVE_C23_BOOL
-#  endif
-#  if utf8_gcc_at_least_version(13,1) || utf8_clang_at_least_version(19)
-#   define HAVE_C23_CONSTEXPR
-#  endif
-#  if utf8_gcc_at_least_version(13,1) || utf8_clang_at_least_version(16)
-#   define HAVE_C23_NULLPTR
 #  endif
 # endif /* __STDC_VERSION__ >= 202000L && !__INTELLISENSE__ */
 
@@ -36,18 +23,7 @@
 #  include <stdbool.h>
 # endif
 
-# ifndef HAVE_C23_CONSTEXPR
-#  define constexpr
-# endif
-
-# ifndef HAVE_C23_NULLPTR
-#  include <stddef.h>
-#  define nullptr NULL
-# endif
-
 # undef HAVE_C23_BOOL
-# undef HAVE_C23_CONSTEXPR
-# undef HAVE_C23_NULLPTR
 
 # if utf8_clang_older_than_version(8)   \
   || utf8_gcc_older_than_version(13,1)  \
@@ -63,12 +39,6 @@
 # else
 #  define utf8_fixed_enum(name, T) enum name : T
 # endif /* clang < 8 || gcc < 13.1 || __INTELLISENSE__ */
-
-# if utf8_clang_older_than_version(16)
-#  ifndef typeof
-#   define typeof __typeof__
-#  endif /* !typeof */
-# endif /* clang < 16 */
 
 /* Old Clang versions don't know new Doxygen commands */
 # if utf8_clang_older_than_version(10)
@@ -104,5 +74,4 @@ utf8_diag_clang(ignored "-Wpre-c11-compat")
 # endif /* clang >= 19 */
 
 #endif /* !__cplusplus */
-
 #endif /* CUTF8_SRC_UTF8_COMPAT_H_ */

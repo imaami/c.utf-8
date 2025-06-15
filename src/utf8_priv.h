@@ -16,10 +16,7 @@
 #undef UTF8_GEN_V
 #undef UTF8_GEN_V_
 #undef UTF8_PARSER_DESCRIPTOR
-#undef utf8_array_size
 #undef utf8_clang_at_least_version
-#undef utf8_clang_equal_to_version
-#undef utf8_clang_not_version
 #undef utf8_clang_older_than_version
 #undef utf8_const_inline
 #undef utf8_diag
@@ -29,14 +26,10 @@
 #undef utf8_fixed_enum
 #undef utf8_force_inline
 #undef utf8_gcc_at_least_version
-#undef utf8_gcc_equal_to_version
-#undef utf8_gcc_not_version
 #undef utf8_gcc_older_than_version
 #undef utf8_ligma
 #undef utf8_ligma_
 #undef utf8_nonnull_in
-#undef utf8_nonnull_in_1
-#undef utf8_nonnull_in_1_2
 #undef utf8_nonnull_out
 #undef utf8_pragma_apple_clang
 #undef utf8_pragma_clang
