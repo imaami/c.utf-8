@@ -1,0 +1,14 @@
+<map id="utf8_priv.h" name="utf8_priv.h">
+<area shape="rect" id="Node000001" title="Including this private header before utf8.h prevents UTF8_PARSER_DESCRIPTOR from being undefined at t..." alt="" coords="102,5,192,33"/>
+<area shape="rect" id="Node000002" href="$d4/d15/test-utf8_8c.html" title=" " alt="" coords="5,81,94,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,45,69,83,65,79,119,40"/>
+<area shape="rect" id="Node000003" href="$db/d7c/utf8_8h.html" title=" " alt="" coords="117,81,176,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,46,142,81,137,80,137,51"/>
+<area shape="rect" id="Node000004" href="$d8/dfc/utf8__impl_8h.html" title=" " alt="" coords="200,81,296,109"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="178,40,233,80,228,81,177,45"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="153,64,153,36,155,31,158,66"/>
+<area shape="rect" id="Node000005" href="$df/d51/utf8_8c.html" title=" " alt="" coords="167,157,225,184"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="233,120,207,158,204,154,228,123"/>
+<area shape="rect" id="Node000006" href="$d9/d0d/utf8__graph_8c.html" title=" " alt="" coords="249,157,351,184"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="267,119,294,157,288,155,265,124"/>
+</map>
