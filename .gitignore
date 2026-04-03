@@ -13,5 +13,6 @@
 /.qtc_clangd
 /.vscode
 /build
+/doc/*/
 /src/test
 /src/test-utf8

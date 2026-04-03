@@ -1,3 +1,6 @@
 [submodule "letopt"]
 	path = src/letopt
 	url = https://github.com/imaami/letopt.git
+[submodule "doxygen-awesome"]
+	path = doc/doxygen-awesome
+	url = https://github.com/jothepro/doxygen-awesome-css.git
