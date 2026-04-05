@@ -326,12 +326,11 @@ PREDEFINED             = "_Atomic(x):=_Atomic x" \
                          array_size:=array_size \
                          constexpr:=constexpr \
                          is_negative:=is_negative \
-                         nullptr:=nullptr \
-                         utf8_const_inline:=inline \
-                         utf8_force_inline:=inline \
-                         utf8_nonnull_in:= \
-                         utf8_nonnull_out:=
-EXPAND_AS_DEFINED      =
+                         nullptr:=nullptr
+EXPAND_AS_DEFINED      = utf8_const_inline \
+                         utf8_force_inline \
+                         utf8_nonnull_in \
+                         utf8_nonnull_out
 SKIP_FUNCTION_MACROS   = YES
 #---------------------------------------------------------------------------
 # Configuration options related to external references
