@@ -318,19 +318,19 @@ EXPAND_ONLY_PREDEF     = NO
 SEARCH_INCLUDES        = YES
 INCLUDE_PATH           =
 INCLUDE_FILE_PATTERNS  =
-PREDEFINED             = "_Atomic(x)=_Atomic x" \
-                         _Alignas(x)= \
-                         __attribute__(x)= \
-                         __has_builtin=__has_builtin \
-                         __typeof__=typeof \
-                         array_size=array_size \
-                         constexpr=constexpr \
-                         is_negative=is_negative \
-                         nullptr=nullptr \
-                         utf8_const_inline=utf8_const_inline \
-                         utf8_force_inline=utf8_force_inline \
-                         utf8_nonnull_in=utf8_nonnull_in \
-                         utf8_nonnull_out=utf8_nonnull_out
+PREDEFINED             = "_Atomic(x):=_Atomic x" \
+                         _Alignas(x):= \
+                         __attribute__(...):= \
+                         __has_builtin:=__has_builtin \
+                         __typeof__:=typeof \
+                         array_size:=array_size \
+                         constexpr:=constexpr \
+                         is_negative:=is_negative \
+                         nullptr:=nullptr \
+                         utf8_const_inline:=inline \
+                         utf8_force_inline:=inline \
+                         utf8_nonnull_in:= \
+                         utf8_nonnull_out:=
 EXPAND_AS_DEFINED      =
 SKIP_FUNCTION_MACROS   = YES
 #---------------------------------------------------------------------------
