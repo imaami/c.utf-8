@@ -154,16 +154,16 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a55262f12fd41427b9c2797e0e6d46ef0" id="r_a55262f12fd41427b9c2797e0e6d46ef0"><td class="memItemLeft">static struct utf8&#160;</td><td class="memItemRight"><a class="el" href="#a55262f12fd41427b9c2797e0e6d46ef0">utf8</a> (void)</td></tr>
 <tr class="memdesc:a55262f12fd41427b9c2797e0e6d46ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF-8 parser object RAII initializer.  <br /></td></tr>
-<tr class="memitem:adf5ad064770523942292819d9e88ca1b" id="r_adf5ad064770523942292819d9e88ca1b"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#adf5ad064770523942292819d9e88ca1b">utf8_reset</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *const u8p)</td></tr>
-<tr class="memdesc:adf5ad064770523942292819d9e88ca1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a UTF-8 parser object.  <br /></td></tr>
+<tr class="memitem:a6a8c5c77923abc61bf6fdbda735b4301" id="r_a6a8c5c77923abc61bf6fdbda735b4301"><td class="memItemLeft">static inlinevoid&#160;</td><td class="memItemRight"><a class="el" href="#a6a8c5c77923abc61bf6fdbda735b4301">utf8_reset</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *const u8p)</td></tr>
+<tr class="memdesc:a6a8c5c77923abc61bf6fdbda735b4301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a UTF-8 parser object.  <br /></td></tr>
 <tr class="memitem:a16258f2e7b9101da3cd999f7bca43c6a" id="r_a16258f2e7b9101da3cd999f7bca43c6a"><td class="memItemLeft">uint8_t const *&#160;</td><td class="memItemRight"><a class="el" href="#a16258f2e7b9101da3cd999f7bca43c6a">utf8_parse_next_code_point</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *u8p, uint8_t const *ptr)</td></tr>
 <tr class="memdesc:a16258f2e7b9101da3cd999f7bca43c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the next UTF-8 code point from a byte buffer.  <br /></td></tr>
-<tr class="memitem:af2056e1f259ce2d777edea8d016c8f2f" id="r_af2056e1f259ce2d777edea8d016c8f2f"><td class="memItemLeft">static char const *&#160;</td><td class="memItemRight"><a class="el" href="#af2056e1f259ce2d777edea8d016c8f2f">utf8_result</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> const *const u8p)</td></tr>
-<tr class="memdesc:af2056e1f259ce2d777edea8d016c8f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the result of the last UTF-8 code point parsing operation.  <br /></td></tr>
-<tr class="memitem:ab0d48aa614a7d3748aa357398a45adb6" id="r_ab0d48aa614a7d3748aa357398a45adb6"><td class="memItemLeft">static size_t&#160;</td><td class="memItemRight"><a class="el" href="#ab0d48aa614a7d3748aa357398a45adb6">utf8_size</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> const *const u8p)</td></tr>
-<tr class="memdesc:ab0d48aa614a7d3748aa357398a45adb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the intended size of the last UTF-8 code point.  <br /></td></tr>
-<tr class="memitem:aa62cf84e78fa192241d99e5cf3e1f3eb" id="r_aa62cf84e78fa192241d99e5cf3e1f3eb"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aa62cf84e78fa192241d99e5cf3e1f3eb">utf8_expects_leading_byte</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> const *const u8p)</td></tr>
-<tr class="memdesc:aa62cf84e78fa192241d99e5cf3e1f3eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the parser expects a leading byte or an ASCII byte.  <br /></td></tr>
+<tr class="memitem:a189cbed34a18ec21b1e2c28ac345e6af" id="r_a189cbed34a18ec21b1e2c28ac345e6af"><td class="memItemLeft">static inlinechar const *&#160;</td><td class="memItemRight"><a class="el" href="#a189cbed34a18ec21b1e2c28ac345e6af">utf8_result</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> const *const u8p)</td></tr>
+<tr class="memdesc:a189cbed34a18ec21b1e2c28ac345e6af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the result of the last UTF-8 code point parsing operation.  <br /></td></tr>
+<tr class="memitem:a6bab66da1b810fa8f02a65b2080c60bb" id="r_a6bab66da1b810fa8f02a65b2080c60bb"><td class="memItemLeft">static inlinesize_t&#160;</td><td class="memItemRight"><a class="el" href="#a6bab66da1b810fa8f02a65b2080c60bb">utf8_size</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> const *const u8p)</td></tr>
+<tr class="memdesc:a6bab66da1b810fa8f02a65b2080c60bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the intended size of the last UTF-8 code point.  <br /></td></tr>
+<tr class="memitem:aaceb410df6886e667f170b034976a349" id="r_aaceb410df6886e667f170b034976a349"><td class="memItemLeft">static inlinebool&#160;</td><td class="memItemRight"><a class="el" href="#aaceb410df6886e667f170b034976a349">utf8_expects_leading_byte</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> const *const u8p)</td></tr>
+<tr class="memdesc:aaceb410df6886e667f170b034976a349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the parser expects a leading byte or an ASCII byte.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Juuso Alasuutari </dd></dl>
@@ -330,8 +330,8 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
 
 </div>
 </div>
-<a id="aa62cf84e78fa192241d99e5cf3e1f3eb" name="aa62cf84e78fa192241d99e5cf3e1f3eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa62cf84e78fa192241d99e5cf3e1f3eb">&#9670;&#160;</a></span>utf8_expects_leading_byte()</h2>
+<a id="aaceb410df6886e667f170b034976a349" name="aaceb410df6886e667f170b034976a349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaceb410df6886e667f170b034976a349">&#9670;&#160;</a></span>utf8_expects_leading_byte()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -340,7 +340,7 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool utf8_expects_leading_byte </td>
+          <td class="memname">inlinebool utf8_expects_leading_byte </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> const *const</td>          <td class="paramname"><span class="paramname"><em>u8p</em></span></td><td>)</td>
           <td></td>
@@ -348,7 +348,7 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -399,9 +399,9 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
 
 <p>Parse the next UTF-8 code point from a byte buffer. </p>
 <p>Consumes up to 4 bytes of UTF-8 encoded input until a code point is assembled or an error occurs. Returns the address of the next byte after the consumed bytes.</p>
-<p>On valid input <span class="tt">u8p-&gt;error</span> is assigned 0 and the address of the next byte after the parsed code point is returned. The parsed code point's value (as UTF-8) can be retrieved by calling <a class="el" href="#af2056e1f259ce2d777edea8d016c8f2f" title="utf8_result()">utf8_result()</a> and its byte size with <a class="el" href="#ab0d48aa614a7d3748aa357398a45adb6" title="utf8_size()">utf8_size()</a>.</p>
+<p>On valid input <span class="tt">u8p-&gt;error</span> is assigned 0 and the address of the next byte after the parsed code point is returned. The parsed code point's value (as UTF-8) can be retrieved by calling <a class="el" href="#a189cbed34a18ec21b1e2c28ac345e6af" title="utf8_result()">utf8_result()</a> and its byte size with <a class="el" href="#a6bab66da1b810fa8f02a65b2080c60bb" title="utf8_size()">utf8_size()</a>.</p>
 <p>On invalid input <span class="tt">u8p-&gt;error</span> is assigned <span class="tt">EILSEQ</span> and the address of the first invalid byte is returned (implying that invalid input is never consumed).</p>
-<p>A null byte is treated like any ASCII value, i.e. valid if <a class="el" href="#aa62cf84e78fa192241d99e5cf3e1f3eb" title="utf8_expects_leading_byte()">utf8_expects_leading_byte()</a> returns <span class="tt">true</span> before the null byte is encountered. More specifically:</p><ul>
+<p>A null byte is treated like any ASCII value, i.e. valid if <a class="el" href="#aaceb410df6886e667f170b034976a349" title="utf8_expects_leading_byte()">utf8_expects_leading_byte()</a> returns <span class="tt">true</span> before the null byte is encountered. More specifically:</p><ul>
 <li>in the initial parser state (utf8_ini), or</li>
 <li>after consuming an ASCII byte (utf8_asc), or</li>
 <li>after consuming the last continuation byte of a multi-byte sequence (utf8_cb1). In this situation the null byte is consumed, <span class="tt">u8p-&gt;error</span> is assigned 0, and the address of the next byte after the null byte is returned.</li>
@@ -419,8 +419,8 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
 
 </div>
 </div>
-<a id="adf5ad064770523942292819d9e88ca1b" name="adf5ad064770523942292819d9e88ca1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf5ad064770523942292819d9e88ca1b">&#9670;&#160;</a></span>utf8_reset()</h2>
+<a id="a6a8c5c77923abc61bf6fdbda735b4301" name="a6a8c5c77923abc61bf6fdbda735b4301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a8c5c77923abc61bf6fdbda735b4301">&#9670;&#160;</a></span>utf8_reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -429,7 +429,7 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void utf8_reset </td>
+          <td class="memname">inlinevoid utf8_reset </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *const</td>          <td class="paramname"><span class="paramname"><em>u8p</em></span></td><td>)</td>
           <td></td>
@@ -437,7 +437,7 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -452,8 +452,8 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
 
 </div>
 </div>
-<a id="af2056e1f259ce2d777edea8d016c8f2f" name="af2056e1f259ce2d777edea8d016c8f2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2056e1f259ce2d777edea8d016c8f2f">&#9670;&#160;</a></span>utf8_result()</h2>
+<a id="a189cbed34a18ec21b1e2c28ac345e6af" name="a189cbed34a18ec21b1e2c28ac345e6af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a189cbed34a18ec21b1e2c28ac345e6af">&#9670;&#160;</a></span>utf8_result()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -462,7 +462,7 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char const  * utf8_result </td>
+          <td class="memname">inlinechar const  * utf8_result </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> const *const</td>          <td class="paramname"><span class="paramname"><em>u8p</em></span></td><td>)</td>
           <td></td>
@@ -470,7 +470,7 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -487,8 +487,8 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
 
 </div>
 </div>
-<a id="ab0d48aa614a7d3748aa357398a45adb6" name="ab0d48aa614a7d3748aa357398a45adb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0d48aa614a7d3748aa357398a45adb6">&#9670;&#160;</a></span>utf8_size()</h2>
+<a id="a6bab66da1b810fa8f02a65b2080c60bb" name="a6bab66da1b810fa8f02a65b2080c60bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bab66da1b810fa8f02a65b2080c60bb">&#9670;&#160;</a></span>utf8_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -497,7 +497,7 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t utf8_size </td>
+          <td class="memname">inlinesize_t utf8_size </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> const *const</td>          <td class="paramname"><span class="paramname"><em>u8p</em></span></td><td>)</td>
           <td></td>
@@ -505,7 +505,7 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
