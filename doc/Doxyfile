@@ -138,9 +138,9 @@ INPUT_FILE_ENCODING    =
 FILE_PATTERNS          = *.c \
                          *.h
 RECURSIVE              = NO
-EXCLUDE                = test-utf8.c
+EXCLUDE                =
 EXCLUDE_SYMLINKS       = NO
-EXCLUDE_PATTERNS       =
+EXCLUDE_PATTERNS       = *test-utf8.c
 EXCLUDE_SYMBOLS        =
 EXAMPLE_PATH           =
 EXAMPLE_PATTERNS       = *
