@@ -160,6 +160,8 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if the parser has finished processing a character, otherwise <span class="tt">false</span>. </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="#a79fdefa17e88a128d4b7e47f5c9b65e8">utf8_parse_next_code_point()</a>.</p>
+
 </div>
 </div>
 <a id="ac449041e74a2c21544fd830f155e4e3e" name="ac449041e74a2c21544fd830f155e4e3e"></a>
@@ -193,6 +195,8 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Mask of state flags representing the allowed states, or 0 if <span class="tt">st8</span> is not a valid state enumeration. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="#a2595fe1f6c737899bc84d42622fe741c">utf8_set_state()</a>.</p>
 
 </div>
 </div>
@@ -233,6 +237,8 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> on success. On failure sets ut8::error to <span class="tt">ENOTRECOVERABLE</span> and returns <span class="tt">false</span>. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="#a79fdefa17e88a128d4b7e47f5c9b65e8">utf8_parse_next_code_point()</a>.</p>
 
 </div>
 </div>
@@ -322,6 +328,8 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="#a88d3887a81123a2c0c6352a19e565326">utf8_push_to_cache()</a>, and <a class="el" href="#a2595fe1f6c737899bc84d42622fe741c">utf8_set_state()</a>.</p>
+
 </div>
 </div>
 <a id="a2595fe1f6c737899bc84d42622fe741c" name="a2595fe1f6c737899bc84d42622fe741c"></a>
@@ -368,6 +376,8 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if the state update was successful. If the update fails, sets utf8::error to <span class="tt">EILSEQ</span> and returns <span class="tt">false</span>. </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="#a79fdefa17e88a128d4b7e47f5c9b65e8">utf8_parse_next_code_point()</a>, and <a class="el" href="#a2595fe1f6c737899bc84d42622fe741c">utf8_set_state()</a>.</p>
+
 </div>
 </div>
 <a id="ade2fffa3d537398d6d5417f295b72e98" name="ade2fffa3d537398d6d5417f295b72e98"></a>
@@ -401,6 +411,8 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if <span class="tt">st8</span> is a leading byte or ASCII, otherwise <span class="tt">false</span>. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="#a88d3887a81123a2c0c6352a19e565326">utf8_push_to_cache()</a>.</p>
 
 </div>
 </div>
@@ -436,6 +448,8 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An enumeration if <span class="tt">bit</span> is a valid parser state flag, otherwise -1. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="#a943de7246c664f580461c95800991e02">utf8_get_state()</a>, and <a class="el" href="#a2595fe1f6c737899bc84d42622fe741c">utf8_set_state()</a>.</p>
 
 </div>
 </div>
