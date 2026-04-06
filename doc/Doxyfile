@@ -85,7 +85,7 @@ HIDE_UNDOC_CLASSES     = NO
 HIDE_UNDOC_NAMESPACES  = YES
 HIDE_FRIEND_COMPOUNDS  = NO
 HIDE_IN_BODY_DOCS      = NO
-INTERNAL_DOCS          = NO
+INTERNAL_DOCS          = YES
 CASE_SENSE_NAMES       = YES
 HIDE_SCOPE_NAMES       = NO
 HIDE_COMPOUND_REFERENCE= NO
@@ -222,7 +222,7 @@ GENERATE_TREEVIEW      = YES
 PAGE_OUTLINE_PANEL     = YES
 FULL_SIDEBAR           = NO
 ENUM_VALUES_PER_LINE   = 4
-SHOW_ENUM_VALUES       = NO
+SHOW_ENUM_VALUES       = YES
 TREEVIEW_WIDTH         = 250
 EXT_LINKS_IN_WINDOW    = NO
 OBFUSCATE_EMAILS       = YES
@@ -321,7 +321,6 @@ INCLUDE_PATH           =
 INCLUDE_FILE_PATTERNS  =
 PREDEFINED             = DOXYGEN=1 \
                          "__STDC_VERSION__=202311L " \
-                         "XST8(n,m,...)=utf8_##m = n, " \
                          "_Atomic(x)=_Atomic x" \
                          "__attribute__(x)= " \
                          "inline:=inline " \
@@ -329,7 +328,7 @@ PREDEFINED             = DOXYGEN=1 \
                          "utf8_force_inline:=utf8_force_inline " \
                          "utf8_nonnull_in:= " \
                          "utf8_nonnull_out:= "
-EXPAND_AS_DEFINED      = \
+EXPAND_AS_DEFINED      = XST8 \
                          UTF8_GEN_V \
                          UTF8_GEN_V_ \
                          UTF8_CMP_V_ \

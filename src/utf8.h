@@ -73,13 +73,13 @@
  * @brief UTF-8 parser state enumeration.
  */
 utf8_fixed_enum(utf8_st8, uint8_t) {
-	//! @cond
+	/** @internal */
 	#define XST8(n,m,...) utf8_##m = n,
-	//! @endcond
+	/** @endinternal */
 	UTF8_PARSER_DESCRIPTOR(XST8)
-	//! @cond
+	/** @cond */
 	#undef XST8
-	//! @endcond
+	/** @endcond */
 };
 
 /**
