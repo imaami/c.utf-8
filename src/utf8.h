@@ -74,11 +74,11 @@
  */
 utf8_fixed_enum(utf8_st8, uint8_t) {
 	//! @cond
-	#define F(n,m,...) utf8_##m = n,
+	#define XST8(n,m,...) utf8_##m = n,
 	//! @endcond
-	UTF8_PARSER_DESCRIPTOR(F)
+	UTF8_PARSER_DESCRIPTOR(XST8)
 	//! @cond
-	#undef F
+	#undef XST8
 	//! @endcond
 };
 

@@ -315,23 +315,30 @@ PERLMOD_MAKEVAR_PREFIX =
 #---------------------------------------------------------------------------
 ENABLE_PREPROCESSING   = YES
 MACRO_EXPANSION        = YES
-EXPAND_ONLY_PREDEF     = NO
+EXPAND_ONLY_PREDEF     = YES
 SEARCH_INCLUDES        = YES
 INCLUDE_PATH           =
 INCLUDE_FILE_PATTERNS  =
 PREDEFINED             = DOXYGEN=1 \
                          "__STDC_VERSION__=202311L " \
+                         "XST8(n,m,...)=utf8_##m = n, " \
                          "_Atomic(x)=_Atomic x" \
                          "__attribute__(x)= " \
                          "inline:=inline " \
                          "utf8_const_inline:=utf8_const_inline " \
-                         "utf8_force_inline:=utf8_force_inline "
-EXPAND_AS_DEFINED      = UTF8_GEN_V  \
+                         "utf8_force_inline:=utf8_force_inline " \
+                         "utf8_nonnull_in:= " \
+                         "utf8_nonnull_out:= "
+EXPAND_AS_DEFINED      = \
+                         UTF8_GEN_V \
                          UTF8_GEN_V_ \
                          UTF8_CMP_V_ \
-                         utf8_v_gcc  \
+                         UTF8_PARSER_DESCRIPTOR \
+                         UTF8_PARSER_STATE_MAP \
+                         utf8_fixed_enum \
+                         utf8_v_gcc \
                          utf8_v_clang
-SKIP_FUNCTION_MACROS   = NO
+SKIP_FUNCTION_MACROS   = YES
 #---------------------------------------------------------------------------
 # Configuration options related to external references
 #---------------------------------------------------------------------------
