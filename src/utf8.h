@@ -11,7 +11,6 @@
 #include <stddef.h>
 #include <stdint.h>
 
-#include "utf8_compat.h"
 #include "utf8_util.h"
 
 /** @brief UTF-8 parser states.
@@ -74,9 +73,13 @@
  * @brief UTF-8 parser state enumeration.
  */
 utf8_fixed_enum(utf8_st8, uint8_t) {
+	//! @cond
 	#define F(n,m,...) utf8_##m = n,
+	//! @endcond
 	UTF8_PARSER_DESCRIPTOR(F)
+	//! @cond
 	#undef F
+	//! @endcond
 };
 
 /**

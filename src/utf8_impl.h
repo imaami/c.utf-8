@@ -11,7 +11,8 @@
 #endif /* DEBUG */
 
 #include "utf8_priv.h"
-#include "utf8_util.h"
+
+//! @cond
 
 #undef HAVE_C23_CONSTEXPR
 #undef HAVE_C23_NULLPTR
@@ -50,6 +51,8 @@
 #ifndef __has_builtin
 # define __has_builtin(...) 0
 #endif /* !__has_builtin */
+
+//! @endcond
 
 /** @brief Calculate the element count of an array.
  */

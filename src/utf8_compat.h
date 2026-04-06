@@ -11,6 +11,8 @@
 
 #ifndef __cplusplus
 
+//! @cond
+
 # undef HAVE_C23_BOOL
 
 # if __STDC_VERSION__ >= 202000L && !defined __INTELLISENSE__
@@ -25,9 +27,11 @@
 
 # undef HAVE_C23_BOOL
 
+//! @endcond
+
 # if utf8_clang_older_than_version(8)   \
   || utf8_gcc_older_than_version(13,1)  \
-  || defined(__INTELLISENSE__)
+  || defined __INTELLISENSE__
 #  define utf8_fixed_enum(name, T) enum name
 # elif utf8_clang_older_than_version(18)
 #  define utf8_fixed_enum(name, T)      \

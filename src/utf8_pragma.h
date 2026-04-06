@@ -11,25 +11,25 @@
 #define utf8_diag_gcc(...)              utf8_pragma_gcc(diagnostic __VA_ARGS__)
 #define utf8_diag(...)                  utf8_diag_clang(__VA_ARGS__) utf8_diag_gcc(__VA_ARGS__)
 
-#ifdef __apple_build_version__
+#if defined __apple_build_version__ || defined DOXYGEN
 # define utf8_pragma_apple_clang        utf8_pragma_clang
 #else
 # define utf8_pragma_apple_clang(...)
 #endif
 
-#ifdef __clang__
+#if defined __clang__ || defined DOXYGEN
 # define utf8_pragma_clang(...) utf8_ligma(clang __VA_ARGS__)
 #else
 # define utf8_pragma_clang(...)
 #endif
 
-#if !defined __clang__ && defined __GNUC__
+#if (!defined __clang__ && defined __GNUC__) || defined DOXYGEN
 # define utf8_pragma_gcc(...)   utf8_ligma(GCC __VA_ARGS__)
 #else
 # define utf8_pragma_gcc(...)
 #endif
 
-#ifdef _MSC_VER
+#if defined _MSC_VER || defined DOXYGEN
 # define utf8_pragma_msvc(...)  utf8_ligma(__VA_ARGS__)
 #else
 # define utf8_pragma_msvc(...)

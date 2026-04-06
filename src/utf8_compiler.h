@@ -6,7 +6,7 @@
 #ifndef CUTF8_SRC_UTF8_COMPILER_H_
 #define CUTF8_SRC_UTF8_COMPILER_H_
 
-#ifdef __clang_major__
+#if defined __clang__ || defined DOXYGEN
 # define utf8_v_clang() UTF8_GEN_V(__clang_major__,    \
                                    __clang_minor__,    \
                                    __clang_patchlevel__)
@@ -17,7 +17,7 @@
 # define utf8_clang_older_than_version(...) 0
 #endif
 
-#if !defined __clang_major__ && defined __GNUC__
+#if (!defined __clang__ && defined __GNUC__) || defined DOXYGEN
 # define utf8_v_gcc() UTF8_GEN_V(__GNUC__,          \
                                  __GNUC_MINOR__,    \
                                  __GNUC_PATCHLEVEL__)

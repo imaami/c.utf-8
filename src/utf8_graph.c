@@ -54,9 +54,13 @@ utf8_graph (char              *dst,
             int        *const  err)
 {
 	constexpr const uint8_t utf8_range[][4] = {
+		//! @cond
 		#define F(n,m,l,...) [n] = {__VA_ARGS__},
+		//! @endcond
 		UTF8_PARSER_DESCRIPTOR(F)
+		//! @cond
 		#undef F
+		//! @endcond
 		#undef UTF8_PARSER_DESCRIPTOR
 	};
 

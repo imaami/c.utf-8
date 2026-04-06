@@ -21,9 +21,13 @@ static utf8_const_inline char const *
 utf8_st8_name (enum utf8_st8 st8)
 {
 	constexpr static char const name[][8] = {
+		//! @cond
 		#define F(n,m,...) [n] = #m,
+		//! @endcond
 		UTF8_PARSER_DESCRIPTOR(F)
+		//! @cond
 		#undef F
+		//! @endcond
 	};
 
 	if (!is_negative(st8) && st8 < array_size(name))
@@ -32,6 +36,8 @@ utf8_st8_name (enum utf8_st8 st8)
 	return nullptr;
 }
 #endif /* DEBUG */
+
+//! @cond
 
 #define X1(x)   x
 #define X2(x)   x,x
@@ -44,6 +50,8 @@ utf8_st8_name (enum utf8_st8 st8)
 #define X32(x)  X16(x),X16(x)
 #define X128(x) X32(x),X32(x),X32(x),X32(x)
 #define X(n, x) X##n(x)
+
+//! @endcond
 
 constexpr static const uint16_t utf8_lut[] = {
 	X(128,utf8_bit(asc)  ), /* 0x00-0x7f */
@@ -81,6 +89,8 @@ constexpr static const uint16_t utf8_lut[] = {
 	X(11,0               ), /* 0xf5-0xff */
 };
 
+//! @cond
+
 #undef X
 #undef X128
 #undef X32
@@ -92,6 +102,8 @@ constexpr static const uint16_t utf8_lut[] = {
 #undef X3
 #undef X2
 #undef X1
+
+//! @endcond
 
 constexpr static const UTF8_PARSER_STATE_MAP(utf8_dst);
 
@@ -220,9 +232,13 @@ utf8_push_to_cache (struct utf8 *const u8p,
                     uint8_t            byte)
 {
 	constexpr static const uint8_t utf8_len[16] = {
+		//! @cond
 		#define F(n,m,l,...) [n] = l,
+		//! @endcond
 		UTF8_PARSER_DESCRIPTOR(F)
+		//! @cond
 		#undef F
+		//! @endcond
 	};
 
 	uint8_t len = utf8_len[st8];
