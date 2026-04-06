@@ -41,7 +41,8 @@ PYTHON_DOCSTRING       = YES
 INHERIT_DOCS           = NO
 SEPARATE_MEMBER_PAGES  = NO
 TAB_SIZE               = 8
-ALIASES                = "anon=@var @noop"
+ALIASES                = "anon=@var @noop" \
+                         "author=@noop"
 OPTIMIZE_OUTPUT_FOR_C  = YES
 OPTIMIZE_OUTPUT_JAVA   = NO
 OPTIMIZE_FOR_FORTRAN   = NO
