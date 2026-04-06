@@ -117,7 +117,6 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a8b2e2ed91e97da12438b4223833a4f55" id="r_a8b2e2ed91e97da12438b4223833a4f55"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8b2e2ed91e97da12438b4223833a4f55">UTF8_PARSER_DESCRIPTOR</a>(F)</td></tr>
 <tr class="memdesc:a8b2e2ed91e97da12438b4223833a4f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF-8 parser states.  <br /></td></tr>
-<tr class="memitem:af3b172f0b2c922e767cd7a4a9b9a4825" id="r_af3b172f0b2c922e767cd7a4a9b9a4825"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af3b172f0b2c922e767cd7a4a9b9a4825">F</a>(n,  m, ...)</td></tr>
 <tr class="memitem:a603f3c4194f3707d3cb750a1f28be440" id="r_a603f3c4194f3707d3cb750a1f28be440"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(label)</td></tr>
 <tr class="memdesc:a603f3c4194f3707d3cb750a1f28be440"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF-8 parser state bit flags.  <br /></td></tr>
 <tr class="memitem:a4f7ed226dac0d569a5f838f9314758e4" id="r_a4f7ed226dac0d569a5f838f9314758e4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4f7ed226dac0d569a5f838f9314758e4">UTF8_PARSER_STATE_MAP</a>(sym)</td></tr>
@@ -125,27 +124,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:abb519100928b7f535d7688de42199000" id="r_abb519100928b7f535d7688de42199000"><td class="memItemLeft"><a id="abb519100928b7f535d7688de42199000" name="abb519100928b7f535d7688de42199000"></a>enum &#160;</td><td class="memItemRight"><a class="el" href="#abb519100928b7f535d7688de42199000">utf8_st8</a> { <br />
-&#160;&#160;<b>utf8_asc</b> = 0
-, <b>utf8_lb2</b> = 1
-, <b>utf8_lb3_e0</b> = 2
-, <b>utf8_lb3</b> = 3
-, <br />
-&#160;&#160;<b>utf8_lb3_ed</b> = 4
-, <b>utf8_lb4_f0</b> = 5
-, <b>utf8_lb4</b> = 6
-, <b>utf8_lb4_f4</b> = 7
-, <br />
-&#160;&#160;<b>utf8_cb3_f4</b> = 8
-, <b>utf8_cb3</b> = 9
-, <b>utf8_cb3_f0</b> = 10
-, <b>utf8_cb2_ed</b> = 11
-, <br />
-&#160;&#160;<b>utf8_cb2</b> = 12
-, <b>utf8_cb2_e0</b> = 13
-, <b>utf8_cb1</b> = 14
-, <b>utf8_ini</b> = 15
-<br />
+<tr class="memitem:abb519100928b7f535d7688de42199000" id="r_abb519100928b7f535d7688de42199000"><td class="memItemLeft"><a id="abb519100928b7f535d7688de42199000" name="abb519100928b7f535d7688de42199000"></a>enum &#160;</td><td class="memItemRight"><a class="el" href="#abb519100928b7f535d7688de42199000">utf8_st8</a> { <b>F</b> =( 0, asc, 1, 0x01, 127, 0, 0) F( 1, lb2, 2, 0xc2, 30, 0, 0) F( 2, lb3_e0, 3, 0xe0, 1, 0, 0) F( 3, lb3, 3, 0xe1, 12, 1, 2) F( 4, lb3_ed, 3, 0xed, 1, 0, 0) F( 5, lb4_f0, 4, 0xf0, 1, 0, 0) F( 6, lb4, 4, 0xf1, 3, 0, 0) F( 7, lb4_f4, 4, 0xf4, 1, 0, 0) F( 8, cb3_f4, 3, 0x80, 16, 0, 0) F( 9, cb3, 3, 0x80, 64, 0, 0) F(10, cb3_f0, 3, 0x90, 48, 0, 0) F(11, cb2_ed, 2, 0x80, 32, 0, 0) F(12, cb2, 2, 0x80, 64, 0, 0) F(13, cb2_e0, 2, 0xa0, 32, 0, 0) F(14, cb1, 1, 0x80, 64, 0, 0) F(15, ini, 0, 0, 0, 0 ,0)
  }</td></tr>
 <tr class="memdesc:abb519100928b7f535d7688de42199000"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF-8 parser state enumeration. <br /></td></tr>
 </table><table class="memberdecls">
@@ -167,33 +146,6 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Juuso Alasuutari </dd></dl>
 </div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
-<a id="af3b172f0b2c922e767cd7a4a9b9a4825" name="af3b172f0b2c922e767cd7a4a9b9a4825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3b172f0b2c922e767cd7a4a9b9a4825">&#9670;&#160;</a></span>F</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define F</td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">utf8_##m = n,</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a603f3c4194f3707d3cb750a1f28be440" name="a603f3c4194f3707d3cb750a1f28be440"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a603f3c4194f3707d3cb750a1f28be440">&#9670;&#160;</a></span>utf8_bit</h2>
 
