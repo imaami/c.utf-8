@@ -2,14 +2,13 @@
 <area shape="rect" id="Node000001" title=" " alt="" coords="109,5,168,33"/>
 <area shape="rect" id="Node000002" href="$d8/dfc/utf8__impl_8h.html" title=" " alt="" coords="91,81,186,109"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,31,141,66,136,65,138,36"/>
-<area shape="rect" id="Node000003" href="$d3/d30/utf8__priv_8h.html" title="Including this private header before utf8.h prevents UTF8_PARSER_DESCRIPTOR from being undefined at t..." alt="" coords="52,157,142,184"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="130,112,114,144,110,142,132,107"/>
+<area shape="rect" id="Node000003" href="$d3/d30/utf8__priv_8h.html" title="Including this private header before utf8.h prevents UTF8_PARSER_DESCRIPTOR from being undefined at t..." alt="" coords="93,157,184,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="139,107,141,141,136,141,138,112"/>
+<area shape="rect" id="Node000004" href="$db/d7c/utf8_8h.html" title=" " alt="" coords="109,232,168,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="132,182,132,217,127,216,131,187"/>
+<area shape="poly" id="edge8_Node000004_Node000003" title=" " alt="" coords="143,231,146,202,148,197,148,233"/>
 <area shape="rect" id="Node000005" href="$d3/db6/utf8__util_8h.html" title=" " alt="" coords="95,308,182,336"/>
-<area shape="poly" id="edge9_Node000002_Node000005" title=" " alt="" coords="143,106,157,156,159,194,157,231,148,294,142,292,152,230,154,194,152,157,143,112"/>
-<area shape="rect" id="Node000004" href="$db/d7c/utf8_8h.html" title=" " alt="" coords="68,232,127,260"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="91,182,91,217,86,216,90,188"/>
-<area shape="poly" id="edge8_Node000004_Node000003" title=" " alt="" coords="102,231,105,202,107,197,107,232"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="105,258,126,294,121,295,104,263"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="139,258,141,293,136,292,138,263"/>
 <area shape="rect" id="Node000006" href="$dd/d13/utf8__compat_8h.html" title=" " alt="" coords="81,384,196,411"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="140,334,141,369,136,367,137,339"/>
 <area shape="rect" id="Node000007" href="$d1/dd3/utf8__compiler_8h.html" title="Compiler identification convenience macros." alt="" coords="5,459,128,487"/>

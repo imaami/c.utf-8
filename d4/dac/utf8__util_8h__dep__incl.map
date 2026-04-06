@@ -1,15 +1,14 @@
 <map id="utf8_util.h" name="utf8_util.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="48,5,136,33"/>
-<area shape="rect" id="Node000002" href="$db/d7c/utf8_8h.html" title=" " alt="" coords="21,81,80,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,49,60,82,55,80,78,44"/>
-<area shape="rect" id="Node000004" href="$d8/dfc/utf8__impl_8h.html" title=" " alt="" coords="44,232,140,260"/>
-<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="99,45,111,110,113,147,110,185,99,233,94,231,105,184,107,147,105,111,98,51"/>
-<area shape="rect" id="Node000003" href="$d3/d30/utf8__priv_8h.html" title="Including this private header before utf8.h prevents UTF8_PARSER_DESCRIPTOR from being undefined at t..." alt="" coords="5,157,96,184"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="42,121,46,156,41,156,41,127"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="57,141,57,112,58,107,62,141"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="66,196,87,232,82,232,65,201"/>
-<area shape="rect" id="Node000005" href="$df/d51/utf8_8c.html" title=" " alt="" coords="11,308,69,336"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="76,272,51,309,47,306,71,274"/>
-<area shape="rect" id="Node000006" href="$d9/d0d/utf8__graph_8c.html" title=" " alt="" coords="93,308,195,336"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="111,270,137,308,132,307,109,275"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="43,5,130,33"/>
+<area shape="rect" id="Node000002" href="$db/d7c/utf8_8h.html" title=" " alt="" coords="57,81,116,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,46,89,81,84,80,86,51"/>
+<area shape="rect" id="Node000003" href="$d3/d30/utf8__priv_8h.html" title="Including this private header before utf8.h prevents UTF8_PARSER_DESCRIPTOR from being undefined at t..." alt="" coords="41,157,132,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,122,82,157,77,156,77,127"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="93,141,93,112,94,107,98,141"/>
+<area shape="rect" id="Node000004" href="$d8/dfc/utf8__impl_8h.html" title=" " alt="" coords="39,232,134,260"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="88,198,89,232,84,231,85,203"/>
+<area shape="rect" id="Node000005" href="$df/d51/utf8_8c.html" title=" " alt="" coords="5,308,64,336"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="71,272,46,309,42,306,66,273"/>
+<area shape="rect" id="Node000006" href="$d9/d0d/utf8__graph_8c.html" title=" " alt="" coords="87,308,190,336"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="106,270,132,308,127,308,103,275"/>
 </map>
