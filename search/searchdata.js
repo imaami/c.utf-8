@@ -1,12 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "aiux",
+  0: "aiu",
   1: "u",
   2: "u",
   3: "u",
   4: "u",
   5: "u",
-  6: "aiux"
+  6: "aiu"
 };
 
 var indexSectionNames =
