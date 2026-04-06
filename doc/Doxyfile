@@ -319,15 +319,12 @@ SEARCH_INCLUDES        = YES
 INCLUDE_PATH           =
 INCLUDE_FILE_PATTERNS  =
 PREDEFINED             = DOXYGEN=1 \
-                         __STDC_VERSION__=202311L \
+                         "__STDC_VERSION__=202311L " \
                          "_Atomic(x)=_Atomic x" \
-                         _Alignas(x)= \
-                         __attribute__(x)= \
-                         __typeof__=typeof \
-                         "utf8_const_inline=inline " \
-                         "utf8_force_inline=inline " \
-                         utf8_nonnull_in= \
-                         utf8_nonnull_out=
+                         "__attribute__(x)= " \
+                         "inline:=inline " \
+                         "utf8_const_inline:=inline " \
+                         "utf8_force_inline:=inline "
 EXPAND_AS_DEFINED      = UTF8_GEN_V  \
                          UTF8_GEN_V_ \
                          UTF8_CMP_V_ \
