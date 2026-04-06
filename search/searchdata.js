@@ -1,11 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "aiu",
+  0: "aiux",
   1: "u",
   2: "u",
   3: "u",
   4: "u",
-  5: "aiu"
+  5: "u",
+  6: "aiux"
 };
 
 var indexSectionNames =
@@ -15,7 +16,8 @@ var indexSectionNames =
   2: "files",
   3: "functions",
   4: "enums",
-  5: "defines"
+  5: "enumvalues",
+  6: "defines"
 };
 
 var indexSectionLabels =
@@ -25,6 +27,7 @@ var indexSectionLabels =
   2: "Files",
   3: "Functions",
   4: "Enumerations",
-  5: "Macros"
+  5: "Enumerator",
+  6: "Macros"
 };
 
