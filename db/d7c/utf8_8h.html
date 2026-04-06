@@ -125,8 +125,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a19afc6c72c350c6d98bccf96ec4fa2c0" id="r_a19afc6c72c350c6d98bccf96ec4fa2c0"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="#a19afc6c72c350c6d98bccf96ec4fa2c0a9e5c9a38d42755347df311a37ff62d71">utf8_asc</a> = 0
+<tr class="memitem:a19afc6c72c350c6d98bccf96ec4fa2c0" id="r_a19afc6c72c350c6d98bccf96ec4fa2c0"><td class="memItemLeft"><a id="a19afc6c72c350c6d98bccf96ec4fa2c0" name="a19afc6c72c350c6d98bccf96ec4fa2c0"></a>enum &#160;</td><td class="memItemRight"><a class="el" href="#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> : uint8_t { <br />
+&#160;&#160;<b>utf8_asc</b> = 0
 , <br />
 &#160;&#160;<b>utf8_lb2</b> = 1
 , <br />
@@ -159,7 +159,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>utf8_ini</b> = 15
 <br />
  }</td></tr>
-<tr class="memdesc:a19afc6c72c350c6d98bccf96ec4fa2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF-8 parser state enumeration.  <a href="#a19afc6c72c350c6d98bccf96ec4fa2c0">More...</a><br /></td></tr>
+<tr class="memdesc:a19afc6c72c350c6d98bccf96ec4fa2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF-8 parser state enumeration. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -314,26 +314,6 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
 </div><!-- fragment -->
 </div>
 </div>
-<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
-<a id="a19afc6c72c350c6d98bccf96ec4fa2c0" name="a19afc6c72c350c6d98bccf96ec4fa2c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19afc6c72c350c6d98bccf96ec4fa2c0">&#9670;&#160;</a></span>utf8_st8</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> : uint8_t</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>UTF-8 parser state enumeration. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a19afc6c72c350c6d98bccf96ec4fa2c0a9e5c9a38d42755347df311a37ff62d71" name="a19afc6c72c350c6d98bccf96ec4fa2c0a9e5c9a38d42755347df311a37ff62d71"></a>utf8_asc&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a1e6c734b500e25d2a2b989972c42f952" name="a1e6c734b500e25d2a2b989972c42f952"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e6c734b500e25d2a2b989972c42f952">&#9670;&#160;</a></span>utf8()</h2>
@@ -392,7 +372,7 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
 <p>Succeeds if the parser:</p>
 <ul>
 <li>is in the initial parser state (utf8_ini), or</li>
-<li>has successfully consumed an ASCII byte (<a class="el" href="#a19afc6c72c350c6d98bccf96ec4fa2c0a9e5c9a38d42755347df311a37ff62d71" title="utf8_asc">utf8_asc</a>), or</li>
+<li>has successfully consumed an ASCII byte (utf8_asc), or</li>
 <li>has successfully consumed the last continuation byte of a multi-byte sequence (utf8_cb1).</li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -438,7 +418,7 @@ This macro is not defined (i.e. gets undefined) when <span class="tt"><a class="
 <p>On invalid input <span class="tt">u8p-&gt;error</span> is assigned <span class="tt">EILSEQ</span> and the address of the first invalid byte is returned (implying that invalid input is never consumed).</p>
 <p>A null byte is treated like any ASCII value, i.e. valid if <a class="el" href="#a4dc3dc7803c5ffbc90bd8336f48e0286" title="utf8_expects_leading_byte()">utf8_expects_leading_byte()</a> returns <span class="tt">true</span> before the null byte is encountered. More specifically:</p><ul>
 <li>in the initial parser state (utf8_ini), or</li>
-<li>after consuming an ASCII byte (<a class="el" href="#a19afc6c72c350c6d98bccf96ec4fa2c0a9e5c9a38d42755347df311a37ff62d71" title="utf8_asc">utf8_asc</a>), or</li>
+<li>after consuming an ASCII byte (utf8_asc), or</li>
 <li>after consuming the last continuation byte of a multi-byte sequence (utf8_cb1). In this situation the null byte is consumed, <span class="tt">u8p-&gt;error</span> is assigned 0, and the address of the next byte after the null byte is returned.</li>
 </ul>
 <p>If a null byte is encountered in any other situation it is an illegal byte inside a multi-byte sequence. In this case <span class="tt">u8p-&gt;error</span> is assigned <span class="tt">EILSEQ</span> and the address of the null byte is returned (i.e. the null byte is not consumed).</p>
