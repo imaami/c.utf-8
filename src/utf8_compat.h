@@ -41,6 +41,7 @@
     enum name : T                       \
     utf8_diag_clang(pop)
 # else
+   /** @brief Polyfill for C23 fixed-type enum */
 #  define utf8_fixed_enum(name, T) enum name : T
 # endif /* clang < 8 || gcc < 13.1 || __INTELLISENSE__ */
 
