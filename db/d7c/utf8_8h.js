@@ -5,10 +5,10 @@ var utf8_8h =
     [ "UTF8_PARSER_DESCRIPTOR", "db/d7c/utf8_8h.html#a8b2e2ed91e97da12438b4223833a4f55", null ],
     [ "UTF8_PARSER_STATE_MAP", "db/d7c/utf8_8h.html#a4f7ed226dac0d569a5f838f9314758e4", null ],
     [ "utf8_st8", "db/d7c/utf8_8h.html#abb519100928b7f535d7688de42199000", null ],
-    [ "utf8", "db/d7c/utf8_8h.html#a55262f12fd41427b9c2797e0e6d46ef0", null ],
-    [ "utf8_expects_leading_byte", "db/d7c/utf8_8h.html#aa62cf84e78fa192241d99e5cf3e1f3eb", null ],
+    [ "utf8", "db/d7c/utf8_8h.html#a1e6c734b500e25d2a2b989972c42f952", null ],
+    [ "utf8_expects_leading_byte", "db/d7c/utf8_8h.html#a4dc3dc7803c5ffbc90bd8336f48e0286", null ],
     [ "utf8_parse_next_code_point", "db/d7c/utf8_8h.html#a16258f2e7b9101da3cd999f7bca43c6a", null ],
-    [ "utf8_reset", "db/d7c/utf8_8h.html#adf5ad064770523942292819d9e88ca1b", null ],
-    [ "utf8_result", "db/d7c/utf8_8h.html#af2056e1f259ce2d777edea8d016c8f2f", null ],
-    [ "utf8_size", "db/d7c/utf8_8h.html#ab0d48aa614a7d3748aa357398a45adb6", null ]
+    [ "utf8_reset", "db/d7c/utf8_8h.html#aa9f1a866289fec6008bb470f821fbc70", null ],
+    [ "utf8_result", "db/d7c/utf8_8h.html#a13cadf1c6bc58917e49bba116639c060", null ],
+    [ "utf8_size", "db/d7c/utf8_8h.html#aff264b79cf3e4fb33bc474db5e4cddb4", null ]
 ];
