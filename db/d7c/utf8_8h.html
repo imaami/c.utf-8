@@ -125,44 +125,25 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a19afc6c72c350c6d98bccf96ec4fa2c0" id="r_a19afc6c72c350c6d98bccf96ec4fa2c0"><td class="memItemLeft"><a id="a19afc6c72c350c6d98bccf96ec4fa2c0" name="a19afc6c72c350c6d98bccf96ec4fa2c0"></a>enum &#160;</td><td class="memItemRight"><a class="el" href="#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> : uint8_t { <br />
-&#160;&#160;<b>asc</b>
-, <b>x01</b>
-, <b>lb2</b>
-, <b>xc2</b>
+&#160;&#160;<b>utf8_asc</b> = 0
+, <b>utf8_lb2</b> = 1
+, <b>utf8_lb3_e0</b> = 2
+, <b>utf8_lb3</b> = 3
 , <br />
-&#160;&#160;<b>lb3_e0</b>
-, <b>xe0</b>
-, <b>lb3</b>
-, <b>xe1</b>
+&#160;&#160;<b>utf8_lb3_ed</b> = 4
+, <b>utf8_lb4_f0</b> = 5
+, <b>utf8_lb4</b> = 6
+, <b>utf8_lb4_f4</b> = 7
 , <br />
-&#160;&#160;<b>lb3_ed</b>
-, <b>xed</b>
-, <b>lb4_f0</b>
-, <b>xf0</b>
+&#160;&#160;<b>utf8_cb3_f4</b> = 8
+, <b>utf8_cb3</b> = 9
+, <b>utf8_cb3_f0</b> = 10
+, <b>utf8_cb2_ed</b> = 11
 , <br />
-&#160;&#160;<b>lb4</b>
-, <b>xf1</b>
-, <b>lb4_f4</b>
-, <b>xf4</b>
-, <br />
-&#160;&#160;<b>cb3_f4</b>
-, <b>x80</b>
-, <b>cb3</b>
-, <b>x80</b>
-, <br />
-&#160;&#160;<b>cb3_f0</b>
-, <b>x90</b>
-, <b>cb2_ed</b>
-, <b>x80</b>
-, <br />
-&#160;&#160;<b>cb2</b>
-, <b>x80</b>
-, <b>cb2_e0</b>
-, <b>xa0</b>
-, <br />
-&#160;&#160;<b>cb1</b>
-, <b>x80</b>
-, <b>ini</b>
+&#160;&#160;<b>utf8_cb2</b> = 12
+, <b>utf8_cb2_e0</b> = 13
+, <b>utf8_cb1</b> = 14
+, <b>utf8_ini</b> = 15
 <br />
  }</td></tr>
 <tr class="memdesc:a19afc6c72c350c6d98bccf96ec4fa2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">UTF-8 parser state enumeration. <br /></td></tr>
