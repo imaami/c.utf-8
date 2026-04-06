@@ -319,6 +319,9 @@ SEARCH_INCLUDES        = YES
 INCLUDE_PATH           =
 INCLUDE_FILE_PATTERNS  =
 PREDEFINED             = __STDC_VERSION__=202311L \
+                         HAVE_C23_BOOL=1 \
+                         HAVE_C23_CONSTEXPR=1 \
+                         HAVE_C23_NULLPTR=1 \
                          "_Atomic(x)=_Atomic x" \
                          _Alignas(x)= \
                          __attribute__(x)= \
