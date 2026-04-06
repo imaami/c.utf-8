@@ -1,11 +1,11 @@
 var utf8_8c =
 [
-    [ "utf8_done", "df/d51/utf8_8c.html#aa7880d301bcd4f671cb741314ad3f2ef", null ],
-    [ "utf8_get_allowed_next_states", "df/d51/utf8_8c.html#a563ac827676a253f451538c4cea30f7f", null ],
-    [ "utf8_get_state", "df/d51/utf8_8c.html#aeb7a020c5f9731d2af58b4783549c114", null ],
-    [ "utf8_parse_next_code_point", "df/d51/utf8_8c.html#a79fdefa17e88a128d4b7e47f5c9b65e8", null ],
-    [ "utf8_push_to_cache", "df/d51/utf8_8c.html#ae3be82f73c48f0d25875ff523c2532ab", null ],
-    [ "utf8_set_state", "df/d51/utf8_8c.html#aaf53c8f566695a81ffb78a88e1767c8d", null ],
-    [ "utf8_st8_is_leading_byte", "df/d51/utf8_8c.html#a7bb34ea386169bb0b5eec29dff9ad833", null ],
-    [ "utf8_state_from_bit", "df/d51/utf8_8c.html#ac83a53d8a51fb6630377f357cf94cc82", null ]
+    [ "utf8_done", "df/d51/utf8_8c.html#a6c97954d04acb0b05fcc733aab818728", null ],
+    [ "utf8_get_allowed_next_states", "df/d51/utf8_8c.html#ac449041e74a2c21544fd830f155e4e3e", null ],
+    [ "utf8_get_state", "df/d51/utf8_8c.html#a8dc6d68985de9465478d75f208fa5414", null ],
+    [ "utf8_parse_next_code_point", "df/d51/utf8_8c.html#aaf4b5de644ba6de7de86facea6650f3f", null ],
+    [ "utf8_push_to_cache", "df/d51/utf8_8c.html#a88d3887a81123a2c0c6352a19e565326", null ],
+    [ "utf8_set_state", "df/d51/utf8_8c.html#a2595fe1f6c737899bc84d42622fe741c", null ],
+    [ "utf8_st8_is_leading_byte", "df/d51/utf8_8c.html#ade2fffa3d537398d6d5417f295b72e98", null ],
+    [ "utf8_state_from_bit", "df/d51/utf8_8c.html#a9c1edbb5a6244588c9c417b42ea55d25", null ]
 ];
