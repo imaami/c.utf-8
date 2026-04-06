@@ -109,16 +109,37 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a8bb1dc63b6cd0d39305c563ba49152eb" id="r_a8bb1dc63b6cd0d39305c563ba49152eb"><td class="memItemLeft"><a id="a8bb1dc63b6cd0d39305c563ba49152eb" name="a8bb1dc63b6cd0d39305c563ba49152eb"></a>
-#define&#160;</td><td class="memItemRight"><b>array_size</b>(x)</td></tr>
-<tr class="memdesc:a8bb1dc63b6cd0d39305c563ba49152eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the element count of an array. <br /></td></tr>
+<tr class="memitem:a8bb1dc63b6cd0d39305c563ba49152eb" id="r_a8bb1dc63b6cd0d39305c563ba49152eb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8bb1dc63b6cd0d39305c563ba49152eb">array_size</a>(x)</td></tr>
+<tr class="memdesc:a8bb1dc63b6cd0d39305c563ba49152eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the element count of an array.  <br /></td></tr>
 <tr class="memitem:a5e63db9e181e0571ee3121f4b17aaf4a" id="r_a5e63db9e181e0571ee3121f4b17aaf4a"><td class="memItemLeft"><a id="a5e63db9e181e0571ee3121f4b17aaf4a" name="a5e63db9e181e0571ee3121f4b17aaf4a"></a>
 #define&#160;</td><td class="memItemRight"><b>assume_value_bits</b>(x,  mask)</td></tr>
 <tr class="memdesc:a5e63db9e181e0571ee3121f4b17aaf4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assume that a value is within a certain range. <br /></td></tr>
 <tr class="memitem:aff894208e73a4ee0d0dcf4440481c046" id="r_aff894208e73a4ee0d0dcf4440481c046"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aff894208e73a4ee0d0dcf4440481c046">is_negative</a>(x)</td></tr>
 <tr class="memdesc:aff894208e73a4ee0d0dcf4440481c046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an integer value is negative without getting warning spam if the type of the value is unsigned.  <br /></td></tr>
+<tr class="memitem:a4e4bc31ce5286391853763457672c156" id="r_a4e4bc31ce5286391853763457672c156"><td class="memItemLeft"><a id="a4e4bc31ce5286391853763457672c156" name="a4e4bc31ce5286391853763457672c156"></a>
+#define&#160;</td><td class="memItemRight"><b>pr_</b>(...)</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="a8bb1dc63b6cd0d39305c563ba49152eb" name="a8bb1dc63b6cd0d39305c563ba49152eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bb1dc63b6cd0d39305c563ba49152eb">&#9670;&#160;</a></span>array_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define array_size</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">(<span class="keyword">sizeof</span>(x) / <span class="keyword">sizeof</span>((x)[0]))</div>
+</div><!-- fragment -->
+<p>Calculate the element count of an array. </p>
+
+</div>
+</div>
 <a id="aff894208e73a4ee0d0dcf4440481c046" name="aff894208e73a4ee0d0dcf4440481c046"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff894208e73a4ee0d0dcf4440481c046">&#9670;&#160;</a></span>is_negative</h2>
 
