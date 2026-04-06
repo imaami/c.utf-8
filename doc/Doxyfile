@@ -318,7 +318,8 @@ EXPAND_ONLY_PREDEF     = YES
 SEARCH_INCLUDES        = YES
 INCLUDE_PATH           =
 INCLUDE_FILE_PATTERNS  =
-PREDEFINED             = "_Atomic(x)=_Atomic x" \
+PREDEFINED             = __STDC_VERSION__=202311L \
+                         "_Atomic(x)=_Atomic x" \
                          _Alignas(x)= \
                          __attribute__(x)= \
                          __typeof__=typeof \
