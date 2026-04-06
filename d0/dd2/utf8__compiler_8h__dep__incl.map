@@ -1,20 +1,19 @@
 <map id="utf8_compiler.h" name="utf8_compiler.h">
-<area shape="rect" id="Node000001" title="Compiler identification convenience macros." alt="" coords="29,5,152,33"/>
-<area shape="rect" id="Node000002" href="$dd/d13/utf8__compat_8h.html" title=" " alt="" coords="33,81,148,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,46,93,81,88,80,90,51"/>
-<area shape="rect" id="Node000003" href="$db/d7c/utf8_8h.html" title=" " alt="" coords="21,232,80,260"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="83,126,57,232,51,231,84,121"/>
-<area shape="rect" id="Node000008" href="$d3/db6/utf8__util_8h.html" title=" " alt="" coords="88,157,176,184"/>
-<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="105,120,127,156,122,157,106,125"/>
-<area shape="rect" id="Node000004" href="$d3/d30/utf8__priv_8h.html" title="Including this private header before utf8.h prevents UTF8_PARSER_DESCRIPTOR from being undefined at t..." alt="" coords="5,308,96,336"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="42,273,46,308,41,307,41,278"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="57,292,57,263,58,258,62,292"/>
-<area shape="rect" id="Node000005" href="$d8/dfc/utf8__impl_8h.html" title=" " alt="" coords="44,384,140,411"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="66,347,87,383,82,384,65,352"/>
-<area shape="rect" id="Node000006" href="$df/d51/utf8_8c.html" title=" " alt="" coords="11,459,69,487"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="76,423,51,461,47,457,71,425"/>
-<area shape="rect" id="Node000007" href="$d9/d0d/utf8__graph_8c.html" title=" " alt="" coords="93,459,195,487"/>
-<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="111,422,137,459,132,459,109,426"/>
-<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="105,197,67,233,63,230,107,192"/>
-<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="131,198,110,336,98,384,93,382,105,335,127,201"/>
+<area shape="rect" id="Node000001" title="Compiler identification convenience macros." alt="" coords="31,5,153,33"/>
+<area shape="rect" id="Node000002" href="$dd/d13/utf8__compat_8h.html" title=" " alt="" coords="34,81,150,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,46,94,81,89,80,92,51"/>
+<area shape="rect" id="Node000003" href="$d3/db6/utf8__util_8h.html" title=" " alt="" coords="48,157,136,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,122,94,157,89,156,91,127"/>
+<area shape="rect" id="Node000004" href="$db/d7c/utf8_8h.html" title=" " alt="" coords="21,232,80,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="76,201,60,233,55,231,78,196"/>
+<area shape="rect" id="Node000006" href="$d8/dfc/utf8__impl_8h.html" title=" " alt="" coords="44,384,140,411"/>
+<area shape="poly" id="edge9_Node000003_Node000006" title=" " alt="" coords="99,197,111,262,113,299,110,336,99,384,94,382,105,335,107,299,105,262,98,202"/>
+<area shape="rect" id="Node000005" href="$d3/d30/utf8__priv_8h.html" title="Including this private header before utf8.h prevents UTF8_PARSER_DESCRIPTOR from being undefined at t..." alt="" coords="5,308,96,336"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="42,273,46,308,41,307,41,278"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="57,292,57,263,58,258,62,292"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="66,347,87,383,82,384,65,352"/>
+<area shape="rect" id="Node000007" href="$df/d51/utf8_8c.html" title=" " alt="" coords="11,459,69,487"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="76,423,51,461,47,457,71,425"/>
+<area shape="rect" id="Node000008" href="$d9/d0d/utf8__graph_8c.html" title=" " alt="" coords="93,459,195,487"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="111,422,137,459,132,459,109,426"/>
 </map>

@@ -110,14 +110,11 @@ Macros</h2></td></tr>
 <tr class="memitem:a813ff9e41dd3b071852d0675775bd297" id="r_a813ff9e41dd3b071852d0675775bd297"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a813ff9e41dd3b071852d0675775bd297">utf8_diag_clang</a>(...)</td></tr>
 <tr class="memitem:a5127028114e10b8ac03948259538350b" id="r_a5127028114e10b8ac03948259538350b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5127028114e10b8ac03948259538350b">utf8_diag_gcc</a>(...)</td></tr>
 <tr class="memitem:a4c1479ee87b6d773fb5ce67fd0365e59" id="r_a4c1479ee87b6d773fb5ce67fd0365e59"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4c1479ee87b6d773fb5ce67fd0365e59">utf8_diag</a>(...)</td></tr>
-<tr class="memitem:a9de3b4d3ec6e83102b3db378a337f916" id="r_a9de3b4d3ec6e83102b3db378a337f916"><td class="memItemLeft"><a id="a9de3b4d3ec6e83102b3db378a337f916" name="a9de3b4d3ec6e83102b3db378a337f916"></a>
-#define&#160;</td><td class="memItemRight"><b>utf8_pragma_apple_clang</b>(...)</td></tr>
-<tr class="memitem:a71900ae097b508dfab193a8935fdee18" id="r_a71900ae097b508dfab193a8935fdee18"><td class="memItemLeft"><a id="a71900ae097b508dfab193a8935fdee18" name="a71900ae097b508dfab193a8935fdee18"></a>
-#define&#160;</td><td class="memItemRight"><b>utf8_pragma_clang</b>(...)</td></tr>
-<tr class="memitem:a6414d6dc8e8d73d796de397967685c84" id="r_a6414d6dc8e8d73d796de397967685c84"><td class="memItemLeft"><a id="a6414d6dc8e8d73d796de397967685c84" name="a6414d6dc8e8d73d796de397967685c84"></a>
-#define&#160;</td><td class="memItemRight"><b>utf8_pragma_gcc</b>(...)</td></tr>
-<tr class="memitem:ab38ed974346d9c6285ad72d28cd7cf72" id="r_ab38ed974346d9c6285ad72d28cd7cf72"><td class="memItemLeft"><a id="ab38ed974346d9c6285ad72d28cd7cf72" name="ab38ed974346d9c6285ad72d28cd7cf72"></a>
-#define&#160;</td><td class="memItemRight"><b>utf8_pragma_msvc</b>(...)</td></tr>
+<tr class="memitem:a5c2d18d855eec4e561aca20b961c2061" id="r_a5c2d18d855eec4e561aca20b961c2061"><td class="memItemLeft"><a id="a5c2d18d855eec4e561aca20b961c2061" name="a5c2d18d855eec4e561aca20b961c2061"></a>
+#define&#160;</td><td class="memItemRight"><b>utf8_pragma_apple_clang</b>&#160;&#160;&#160;utf8_pragma_clang</td></tr>
+<tr class="memitem:a71900ae097b508dfab193a8935fdee18" id="r_a71900ae097b508dfab193a8935fdee18"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a71900ae097b508dfab193a8935fdee18">utf8_pragma_clang</a>(...)</td></tr>
+<tr class="memitem:a6414d6dc8e8d73d796de397967685c84" id="r_a6414d6dc8e8d73d796de397967685c84"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6414d6dc8e8d73d796de397967685c84">utf8_pragma_gcc</a>(...)</td></tr>
+<tr class="memitem:ab38ed974346d9c6285ad72d28cd7cf72" id="r_ab38ed974346d9c6285ad72d28cd7cf72"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab38ed974346d9c6285ad72d28cd7cf72">utf8_pragma_msvc</a>(...)</td></tr>
 <tr class="memitem:a65a3c94c640c27285799e935d76c9117" id="r_a65a3c94c640c27285799e935d76c9117"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a65a3c94c640c27285799e935d76c9117">utf8_ligma_</a>(...)</td></tr>
 <tr class="memitem:aafcacdd7b670ca8cf0e1a9e3b60bda7f" id="r_aafcacdd7b670ca8cf0e1a9e3b60bda7f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aafcacdd7b670ca8cf0e1a9e3b60bda7f">utf8_ligma</a>(...)</td></tr>
 </table>
@@ -230,6 +227,60 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="preprocessor"># __VA_ARGS__</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a71900ae097b508dfab193a8935fdee18" name="a71900ae097b508dfab193a8935fdee18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71900ae097b508dfab193a8935fdee18">&#9670;&#160;</a></span>utf8_pragma_clang</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define utf8_pragma_clang</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">utf8_ligma(clang __VA_ARGS__)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6414d6dc8e8d73d796de397967685c84" name="a6414d6dc8e8d73d796de397967685c84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6414d6dc8e8d73d796de397967685c84">&#9670;&#160;</a></span>utf8_pragma_gcc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define utf8_pragma_gcc</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">utf8_ligma(GCC __VA_ARGS__)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab38ed974346d9c6285ad72d28cd7cf72" name="ab38ed974346d9c6285ad72d28cd7cf72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38ed974346d9c6285ad72d28cd7cf72">&#9670;&#160;</a></span>utf8_pragma_msvc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define utf8_pragma_msvc</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">utf8_ligma(__VA_ARGS__)</div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -2,14 +2,13 @@
 <area shape="rect" id="Node000001" title="Including this private header before utf8.h prevents UTF8_PARSER_DESCRIPTOR from being undefined at t..." alt="" coords="93,5,184,33"/>
 <area shape="rect" id="Node000002" href="$db/d7c/utf8_8h.html" title=" " alt="" coords="109,81,168,109"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,31,132,66,127,65,131,36"/>
-<area shape="poly" id="edge7_Node000002_Node000001" title=" " alt="" coords="143,80,146,51,148,46,148,81"/>
-<area shape="rect" id="Node000003" href="$dd/d13/utf8__compat_8h.html" title=" " alt="" coords="81,232,196,260"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="136,107,126,157,126,184,133,218,128,217,121,185,121,156,133,111"/>
-<area shape="rect" id="Node000006" href="$d3/db6/utf8__util_8h.html" title=" " alt="" coords="136,157,224,184"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="146,107,168,143,162,143,145,112"/>
-<area shape="rect" id="Node000004" href="$d1/dd3/utf8__compiler_8h.html" title="Compiler identification convenience macros." alt="" coords="5,308,128,336"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="128,259,92,299,88,295,123,262"/>
-<area shape="rect" id="Node000005" href="$db/d90/utf8__pragma_8h.html" title="Cross&#45;compiler pragma wrapper macros." alt="" coords="152,308,269,336"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="152,258,190,297,185,297,150,263"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="174,183,155,220,151,217,171,187"/>
+<area shape="poly" id="edge6_Node000002_Node000001" title=" " alt="" coords="143,80,146,51,148,46,148,81"/>
+<area shape="rect" id="Node000003" href="$d3/db6/utf8__util_8h.html" title=" " alt="" coords="95,157,182,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="139,107,141,142,136,140,138,112"/>
+<area shape="rect" id="Node000004" href="$dd/d13/utf8__compat_8h.html" title=" " alt="" coords="81,232,196,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="140,183,141,217,136,216,137,187"/>
+<area shape="rect" id="Node000005" href="$d1/dd3/utf8__compiler_8h.html" title="Compiler identification convenience macros." alt="" coords="5,308,128,336"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="128,259,92,299,88,295,123,262"/>
+<area shape="rect" id="Node000006" href="$db/d90/utf8__pragma_8h.html" title="Cross&#45;compiler pragma wrapper macros." alt="" coords="152,308,269,336"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="152,258,190,297,185,297,150,263"/>
 </map>
