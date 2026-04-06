@@ -320,7 +320,8 @@ SEARCH_INCLUDES        = YES
 INCLUDE_PATH           =
 INCLUDE_FILE_PATTERNS  =
 PREDEFINED             = DOXYGEN=1 \
-                         "__STDC_VERSION__=202311L " \
+                         "__STDC_VERSION__=name : " \
+                         "XST8(n,m,...)=utf8_##m = n," \
                          "_Atomic(x)=_Atomic x" \
                          "__attribute__(x)= " \
                          "inline:=inline " \
@@ -328,8 +329,7 @@ PREDEFINED             = DOXYGEN=1 \
                          "utf8_force_inline:=utf8_force_inline " \
                          "utf8_nonnull_in:= " \
                          "utf8_nonnull_out:= "
-EXPAND_AS_DEFINED      = XST8 \
-                         UTF8_GEN_V \
+EXPAND_AS_DEFINED      = UTF8_GEN_V \
                          UTF8_GEN_V_ \
                          UTF8_CMP_V_ \
                          UTF8_PARSER_DESCRIPTOR \
