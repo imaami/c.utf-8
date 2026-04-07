@@ -45,13 +45,14 @@
  *    following the leading byte 0xf4.
  */
 #define UTF8_PARSER_DESCRIPTOR(F)                                                                      \
-        /* ╭───────────────────────────────enumeration                                              */ \
-        /* │      ╭────────────────────────label                                                    */ \
-        /* │      │    ╭───────────────────size                                                     */ \
-        /* │      │    │     ╭─────────────start                                                    */ \
-        /* │      │    │     │    ╭────────run                                                      */ \
-        /* │      │    │     │    │  ╭─────skip                                                     */ \
-        /* │      │    │     │    │  │  ╭──run                                                      */ \
+        /*  _______________________________enumeration                                              */ \
+        /* /       ________________________label                                                    */ \
+        /* |      /     ___________________size                                                     */ \
+        /* |      |    /      _____________start                                                    */ \
+        /* |      |    |     /     ________run                                                      */ \
+        /* |      |    |     |    /   _____skip                                                     */ \
+        /* |      |    |     |    |  /   __run                                                      */ \
+        /* |      |    |     |    |  |  /                                                           */ \
         F( 0,  asc,    1, 0x01, 127, 0, 0) /* ASCII - never followed by continuation byte 0x80-0xbf */ \
         F( 1,  lb2,    2, 0xc2,  30, 0, 0) /* start of 2-byte sequence, any continuation may follow */ \
         F( 2,  lb3_e0, 3, 0xe0,   1, 0, 0) /* start of 3-byte sequence, next byte must be 0xa0-0xbf */ \
