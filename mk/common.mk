@@ -188,16 +188,18 @@ $(A_TGT:%=$O%):
 endif
 
 $O%.c.o: $(SRCDIR)%.c
-	+$(strip $(CC) $(CPPFLAGS) $(CFLAGS)          \
-	               $(CFLAGS_$(notdir $<))         \
-	               -ffile-prefix-map=$(SRCDIR)='' \
-	               -MMD -o "$@" -c "$<")
+	+$(strip $(CC) -o "$@" -MMD $(CPPFLAGS)       \
+	               $(CPPFLAGS_$(<F)) $(CFLAGS)    \
+	               $(CFLAGS_$(<F))                \
+	               -ffile-prefix-map="$(<D:/=)/=" \
+	               -c "$<")
 
 $O%.cpp.o: $(SRCDIR)%.cpp
-	+$(strip $(CXX) $(CPPFLAGS) $(CXXFLAGS)        \
-	                $(CXXFLAGS_$(notdir $<))       \
-	                -ffile-prefix-map=$(SRCDIR)='' \
-	                -MMD -o "$@" -c "$<")
+	+$(strip $(CXX) -o "$@" -MMD $(CPPFLAGS)       \
+	                $(CPPFLAGS_$(<F)) $(CXXFLAGS)  \
+	                $(CXXFLAGS_$(<F))              \
+	                -ffile-prefix-map="$(<D:/=)/=" \
+	                -c "$<")
 
 $(TGT:%=clean-%) clean-compile_commands.json:
 	$(RM) $O$(@:clean-%=%)
@@ -217,10 +219,11 @@ $(TGT:%=clean.json-%):
 	$(RM) $(JSON_$(@:clean.json-%=%))
 
 $O%.c.o.json: $(SRCDIR)%.c
-	@printf '%s\0' $(CC) $(CPPFLAGS) $(CFLAGS)    \
-	               $(CFLAGS_$(notdir $<))         \
-	               -ffile-prefix-map=$(SRCDIR)='' \
-	               -MMD -o "$(@:.json=)" -c "$<"  \
+	@printf '%s\0' $(CC) -o "$(@:.json=)" -MMD    \
+	               $(CPPFLAGS) $(CPPFLAGS_$(<F))  \
+	               $(CFLAGS) $(CFLAGS_$(<F))      \
+	               -ffile-prefix-map="$(<D:/=)/=" \
+	               -c "$<"                        \
 	| jq -MRs --arg dir "$(O:/%/=/%)"             \
 	          --arg src "$<"                      \
 	          --arg out "$(@:.json=)"             \
@@ -229,10 +232,11 @@ $O%.c.o.json: $(SRCDIR)%.c
 	        file: \$$src, output: \$$out }" > "$@"
 
 $O%.cpp.o.json: $(SRCDIR)%.cpp
-	@printf '%s\0' $(CXX) $(CPPFLAGS) $(CXXFLAGS) \
-	               $(CXXFLAGS_$(notdir $<))       \
-	               -ffile-prefix-map=$(SRCDIR)='' \
-	               -MMD -o "$(@:.json=)" -c "$<"  \
+	@printf '%s\0' $(CXX) -o "$(@:.json=)" -MMD   \
+	               $(CPPFLAGS) $(CPPFLAGS_$(<F))  \
+	               $(CXXFLAGS) $(CXXFLAGS_$(<F))  \
+	               -ffile-prefix-map="$(<D:/=)/=" \
+	               -c "$<"                        \
 	| jq -MRs --arg dir "$(O:/%/=/%)"             \
 	          --arg src "$<"                      \
 	          --arg out "$(@:.json=)"             \
