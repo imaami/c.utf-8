@@ -102,6 +102,8 @@ utf8_fixed_enum(utf8_st8, uint8_t) {
  *       when `utf8.h` is included as a public interface.
  *
  * @param sym Symbol name for the lookup table.
+ *
+ * @showinitializer
  */
 #define UTF8_PARSER_STATE_MAP(sym) uint16_t sym[16] = { \
         [utf8_asc   ] = utf8_bit(asc)                   \
