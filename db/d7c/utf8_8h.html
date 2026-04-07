@@ -272,7 +272,47 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">        uint16_t sym[16] = { \</div>
+<div class="line">        [utf8_asc   ] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(asc)                   \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb2)                   \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3_e0)                \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3)                   \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3_ed)                \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4_f0)                \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4)                   \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4_f4),               \</div>
+<div class="line">        [utf8_lb2   ] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb1),                  \</div>
+<div class="line">        [utf8_lb3_e0] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb2_e0),               \</div>
+<div class="line">        [utf8_lb3   ] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb2),                  \</div>
+<div class="line">        [utf8_lb3_ed] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb2_ed),               \</div>
+<div class="line">        [utf8_lb4_f0] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb3_f0),               \</div>
+<div class="line">        [utf8_lb4   ] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb3),                  \</div>
+<div class="line">        [utf8_lb4_f4] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb3_f4),               \</div>
+<div class="line">        [utf8_cb3_f4] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb2),                  \</div>
+<div class="line">        [utf8_cb3   ] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb2),                  \</div>
+<div class="line">        [utf8_cb3_f0] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb2),                  \</div>
+<div class="line">        [utf8_cb2_ed] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb1),                  \</div>
+<div class="line">        [utf8_cb2   ] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb1),                  \</div>
+<div class="line">        [utf8_cb2_e0] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb1),                  \</div>
+<div class="line">        [utf8_cb1   ] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(asc)                   \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb2)                   \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3_e0)                \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3)                   \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3_ed)                \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4_f0)                \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4)                   \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4_f4),               \</div>
+<div class="line">        [utf8_ini   ] = <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(asc)                   \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb2)                   \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3_e0)                \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3)                   \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3_ed)                \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4_f0)                \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4)                   \</div>
+<div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4_f4),               \</div>
+<div class="line">}</div>
+<div class="ttc" id="autf8_8h_html_a603f3c4194f3707d3cb750a1f28be440"><div class="ttname"><a href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a></div><div class="ttdeci">#define utf8_bit(label)</div><div class="ttdoc">UTF-8 parser state bit flags.</div><div class="ttdef"><b>Definition</b> utf8.h:90</div></div>
+</div><!-- fragment -->
 <p>Define a lookup table describing allowed state transitions from each state, using state enums for keys and sets of state flags for values. </p>
 <dl class="section note"><dt>Note</dt><dd>The baked-in type declaration is <span class="tt">uint16_t[16]</span> with no type qualifiers; prepend more as needed (e.g. <span class="tt">const</span>, <span class="tt">static</span>, etc.).</dd>
 <dd>

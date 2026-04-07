@@ -141,126 +141,126 @@ $(function(){initNavTree('db/d7c/utf8_8h_source.html','../../',''); });
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">   90</a></span><span class="preprocessor">#define utf8_bit(label) (uint16_t)(1U &lt;&lt; utf8_##label)</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span></div>
-<div class="foldopen" id="foldopen00106" data-start="" data-end="">
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../db/d7c/utf8_8h.html#a4f7ed226dac0d569a5f838f9314758e4">  106</a></span><span class="preprocessor">#define UTF8_PARSER_STATE_MAP(sym) uint16_t sym[16] = { \</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">        [utf8_asc   ] = utf8_bit(asc)                   \</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">                      | utf8_bit(lb2)                   \</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">                      | utf8_bit(lb3_e0)                \</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">                      | utf8_bit(lb3)                   \</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">                      | utf8_bit(lb3_ed)                \</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">                      | utf8_bit(lb4_f0)                \</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">                      | utf8_bit(lb4)                   \</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">                      | utf8_bit(lb4_f4),               \</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">        [utf8_lb2   ] = utf8_bit(cb1),                  \</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">        [utf8_lb3_e0] = utf8_bit(cb2_e0),               \</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">        [utf8_lb3   ] = utf8_bit(cb2),                  \</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">        [utf8_lb3_ed] = utf8_bit(cb2_ed),               \</span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">        [utf8_lb4_f0] = utf8_bit(cb3_f0),               \</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">        [utf8_lb4   ] = utf8_bit(cb3),                  \</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">        [utf8_lb4_f4] = utf8_bit(cb3_f4),               \</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">        [utf8_cb3_f4] = utf8_bit(cb2),                  \</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">        [utf8_cb3   ] = utf8_bit(cb2),                  \</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">        [utf8_cb3_f0] = utf8_bit(cb2),                  \</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">        [utf8_cb2_ed] = utf8_bit(cb1),                  \</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">        [utf8_cb2   ] = utf8_bit(cb1),                  \</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="preprocessor">        [utf8_cb2_e0] = utf8_bit(cb1),                  \</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">        [utf8_cb1   ] = utf8_bit(asc)                   \</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">                      | utf8_bit(lb2)                   \</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">                      | utf8_bit(lb3_e0)                \</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">                      | utf8_bit(lb3)                   \</span></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">                      | utf8_bit(lb3_ed)                \</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">                      | utf8_bit(lb4_f0)                \</span></div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">                      | utf8_bit(lb4)                   \</span></div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">                      | utf8_bit(lb4_f4),               \</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="preprocessor">        [utf8_ini   ] = utf8_bit(asc)                   \</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">                      | utf8_bit(lb2)                   \</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="preprocessor">                      | utf8_bit(lb3_e0)                \</span></div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="preprocessor">                      | utf8_bit(lb3)                   \</span></div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="preprocessor">                      | utf8_bit(lb3_ed)                \</span></div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="preprocessor">                      | utf8_bit(lb4_f0)                \</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="preprocessor">                      | utf8_bit(lb4)                   \</span></div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="preprocessor">                      | utf8_bit(lb4_f4),               \</span></div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="preprocessor">}</span></div>
+<div class="foldopen" id="foldopen00108" data-start="" data-end="">
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../db/d7c/utf8_8h.html#a4f7ed226dac0d569a5f838f9314758e4">  108</a></span><span class="preprocessor">#define UTF8_PARSER_STATE_MAP(sym) uint16_t sym[16] = { \</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">        [utf8_asc   ] = utf8_bit(asc)                   \</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">                      | utf8_bit(lb2)                   \</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">                      | utf8_bit(lb3_e0)                \</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">                      | utf8_bit(lb3)                   \</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">                      | utf8_bit(lb3_ed)                \</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">                      | utf8_bit(lb4_f0)                \</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">                      | utf8_bit(lb4)                   \</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">                      | utf8_bit(lb4_f4),               \</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">        [utf8_lb2   ] = utf8_bit(cb1),                  \</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">        [utf8_lb3_e0] = utf8_bit(cb2_e0),               \</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">        [utf8_lb3   ] = utf8_bit(cb2),                  \</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">        [utf8_lb3_ed] = utf8_bit(cb2_ed),               \</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">        [utf8_lb4_f0] = utf8_bit(cb3_f0),               \</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">        [utf8_lb4   ] = utf8_bit(cb3),                  \</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">        [utf8_lb4_f4] = utf8_bit(cb3_f4),               \</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">        [utf8_cb3_f4] = utf8_bit(cb2),                  \</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">        [utf8_cb3   ] = utf8_bit(cb2),                  \</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">        [utf8_cb3_f0] = utf8_bit(cb2),                  \</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="preprocessor">        [utf8_cb2_ed] = utf8_bit(cb1),                  \</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">        [utf8_cb2   ] = utf8_bit(cb1),                  \</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">        [utf8_cb2_e0] = utf8_bit(cb1),                  \</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">        [utf8_cb1   ] = utf8_bit(asc)                   \</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">                      | utf8_bit(lb2)                   \</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">                      | utf8_bit(lb3_e0)                \</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">                      | utf8_bit(lb3)                   \</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">                      | utf8_bit(lb3_ed)                \</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">                      | utf8_bit(lb4_f0)                \</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="preprocessor">                      | utf8_bit(lb4)                   \</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">                      | utf8_bit(lb4_f4),               \</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="preprocessor">        [utf8_ini   ] = utf8_bit(asc)                   \</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="preprocessor">                      | utf8_bit(lb2)                   \</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="preprocessor">                      | utf8_bit(lb3_e0)                \</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="preprocessor">                      | utf8_bit(lb3)                   \</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="preprocessor">                      | utf8_bit(lb3_ed)                \</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="preprocessor">                      | utf8_bit(lb4_f0)                \</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="preprocessor">                      | utf8_bit(lb4)                   \</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="preprocessor">                      | utf8_bit(lb4_f4),               \</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="preprocessor">}</span></div>
 </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span></div>
-<div class="foldopen" id="foldopen00149" data-start="{" data-end="};">
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="../../d8/d41/structutf8.html">  149</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a> {</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        uint16_t state;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        uint8_t  cache[5];</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        uint8_t  error;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>};</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span></div>
+<div class="foldopen" id="foldopen00151" data-start="{" data-end="};">
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="../../d8/d41/structutf8.html">  151</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a> {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        uint16_t state;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        uint8_t  cache[5];</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        uint8_t  error;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>};</div>
 </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="keyword">static</span> <a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a></div>
-<div class="foldopen" id="foldopen00160" data-start="{" data-end="}">
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="../../db/d7c/utf8_8h.html#a1e6c734b500e25d2a2b989972c42f952">  160</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a> <a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a> (void)</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>{</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordflow">return</span> (<span class="keyword">struct</span> <a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a>) {</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                .state = <a class="code hl_define" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(ini),</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                .cache = {0,0,0,0,0},</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                .error = 0,</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        };</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="keyword">static</span> <a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a></div>
+<div class="foldopen" id="foldopen00162" data-start="{" data-end="}">
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="../../db/d7c/utf8_8h.html#a1e6c734b500e25d2a2b989972c42f952">  162</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a> <a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a> (void)</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>{</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">return</span> (<span class="keyword">struct</span> <a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a>) {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                .state = <a class="code hl_define" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(ini),</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                .cache = {0,0,0,0,0},</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                .error = 0,</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        };</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>}</div>
 </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a1171047acd2a76b705f0ecbfd5b0b896">utf8_nonnull_in</a></div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keyword">static</span> <a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> <span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00175" data-start="{" data-end="}">
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="../../db/d7c/utf8_8h.html#aa9f1a866289fec6008bb470f821fbc70">  175</a></span><a class="code hl_function" href="../../db/d7c/utf8_8h.html#aa9f1a866289fec6008bb470f821fbc70">utf8_reset</a> (<span class="keyword">struct</span> <a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a> *<span class="keyword">const</span> u8p)</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>{</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        *u8p = <a class="code hl_function" href="../../db/d7c/utf8_8h.html#a1e6c734b500e25d2a2b989972c42f952">utf8</a>();</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>}</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a1171047acd2a76b705f0ecbfd5b0b896">utf8_nonnull_in</a></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="keyword">static</span> <a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00177" data-start="{" data-end="}">
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="../../db/d7c/utf8_8h.html#aa9f1a866289fec6008bb470f821fbc70">  177</a></span><a class="code hl_function" href="../../db/d7c/utf8_8h.html#aa9f1a866289fec6008bb470f821fbc70">utf8_reset</a> (<span class="keyword">struct</span> <a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a> *<span class="keyword">const</span> u8p)</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>{</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        *u8p = <a class="code hl_function" href="../../db/d7c/utf8_8h.html#a1e6c734b500e25d2a2b989972c42f952">utf8</a>();</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>}</div>
 </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span></div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#adbeacbefb2c9190d56d2cca56f7ca4e9">utf8_nonnull_out</a></div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="keyword">extern</span> uint8_t <span class="keyword">const</span> *</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><a class="code hl_function" href="../../db/d7c/utf8_8h.html#a16258f2e7b9101da3cd999f7bca43c6a">utf8_parse_next_code_point</a> (<span class="keyword">struct</span> <a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a>   *u8p,</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                            uint8_t <span class="keyword">const</span> *ptr) <a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a1171047acd2a76b705f0ecbfd5b0b896">utf8_nonnull_in</a>;</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a1171047acd2a76b705f0ecbfd5b0b896">utf8_nonnull_in</a> <a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#adbeacbefb2c9190d56d2cca56f7ca4e9">utf8_nonnull_out</a></div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="keyword">static</span> <a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> <span class="keywordtype">char</span> <span class="keyword">const</span> *</div>
-<div class="foldopen" id="foldopen00244" data-start="{" data-end="}">
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="../../db/d7c/utf8_8h.html#a13cadf1c6bc58917e49bba116639c060">  244</a></span><a class="code hl_function" href="../../db/d7c/utf8_8h.html#a13cadf1c6bc58917e49bba116639c060">utf8_result</a> (<span class="keyword">struct</span> <a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a> <span class="keyword">const</span> *<span class="keyword">const</span> u8p)</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>{</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <span class="keywordflow">return</span> (<span class="keywordtype">char</span> <span class="keyword">const</span> *)&amp;u8p-&gt;cache[1];</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>}</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#adbeacbefb2c9190d56d2cca56f7ca4e9">utf8_nonnull_out</a></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="keyword">extern</span> uint8_t <span class="keyword">const</span> *</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><a class="code hl_function" href="../../db/d7c/utf8_8h.html#a16258f2e7b9101da3cd999f7bca43c6a">utf8_parse_next_code_point</a> (<span class="keyword">struct</span> <a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a>   *u8p,</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                            uint8_t <span class="keyword">const</span> *ptr) <a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a1171047acd2a76b705f0ecbfd5b0b896">utf8_nonnull_in</a>;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a1171047acd2a76b705f0ecbfd5b0b896">utf8_nonnull_in</a> <a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#adbeacbefb2c9190d56d2cca56f7ca4e9">utf8_nonnull_out</a></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="keyword">static</span> <a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> <span class="keywordtype">char</span> <span class="keyword">const</span> *</div>
+<div class="foldopen" id="foldopen00246" data-start="{" data-end="}">
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="../../db/d7c/utf8_8h.html#a13cadf1c6bc58917e49bba116639c060">  246</a></span><a class="code hl_function" href="../../db/d7c/utf8_8h.html#a13cadf1c6bc58917e49bba116639c060">utf8_result</a> (<span class="keyword">struct</span> <a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a> <span class="keyword">const</span> *<span class="keyword">const</span> u8p)</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>{</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        <span class="keywordflow">return</span> (<span class="keywordtype">char</span> <span class="keyword">const</span> *)&amp;u8p-&gt;cache[1];</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>}</div>
 </div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a1171047acd2a76b705f0ecbfd5b0b896">utf8_nonnull_in</a></div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="keyword">static</span> <a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> <span class="keywordtype">size_t</span></div>
-<div class="foldopen" id="foldopen00264" data-start="{" data-end="}">
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="../../db/d7c/utf8_8h.html#aff264b79cf3e4fb33bc474db5e4cddb4">  264</a></span><a class="code hl_function" href="../../db/d7c/utf8_8h.html#aff264b79cf3e4fb33bc474db5e4cddb4">utf8_size</a> (<span class="keyword">struct</span> <a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a> <span class="keyword">const</span> *<span class="keyword">const</span> u8p)</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>{</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keywordflow">return</span> u8p-&gt;cache[0];</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>}</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a1171047acd2a76b705f0ecbfd5b0b896">utf8_nonnull_in</a></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="keyword">static</span> <a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> <span class="keywordtype">size_t</span></div>
+<div class="foldopen" id="foldopen00266" data-start="{" data-end="}">
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="../../db/d7c/utf8_8h.html#aff264b79cf3e4fb33bc474db5e4cddb4">  266</a></span><a class="code hl_function" href="../../db/d7c/utf8_8h.html#aff264b79cf3e4fb33bc474db5e4cddb4">utf8_size</a> (<span class="keyword">struct</span> <a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a> <span class="keyword">const</span> *<span class="keyword">const</span> u8p)</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>{</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <span class="keywordflow">return</span> u8p-&gt;cache[0];</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>}</div>
 </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a1171047acd2a76b705f0ecbfd5b0b896">utf8_nonnull_in</a></div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="keyword">static</span> <a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a> <span class="keywordtype">bool</span></div>
-<div class="foldopen" id="foldopen00284" data-start="{" data-end="}">
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="../../db/d7c/utf8_8h.html#a4dc3dc7803c5ffbc90bd8336f48e0286">  284</a></span><a class="code hl_function" href="../../db/d7c/utf8_8h.html#a4dc3dc7803c5ffbc90bd8336f48e0286">utf8_expects_leading_byte</a> (<span class="keyword">struct</span> <a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a> <span class="keyword">const</span> *<span class="keyword">const</span> u8p)</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>{</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        <span class="keywordflow">return</span> u8p-&gt;state &amp; (<a class="code hl_define" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(asc) | <a class="code hl_define" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb1) | <a class="code hl_define" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(ini));</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>}</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#a1171047acd2a76b705f0ecbfd5b0b896">utf8_nonnull_in</a></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="keyword">static</span> <a class="code hl_define" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a> <span class="keywordtype">bool</span></div>
+<div class="foldopen" id="foldopen00286" data-start="{" data-end="}">
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="../../db/d7c/utf8_8h.html#a4dc3dc7803c5ffbc90bd8336f48e0286">  286</a></span><a class="code hl_function" href="../../db/d7c/utf8_8h.html#a4dc3dc7803c5ffbc90bd8336f48e0286">utf8_expects_leading_byte</a> (<span class="keyword">struct</span> <a class="code hl_struct" href="../../d8/d41/structutf8.html">utf8</a> <span class="keyword">const</span> *<span class="keyword">const</span> u8p)</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>{</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        <span class="keywordflow">return</span> u8p-&gt;state &amp; (<a class="code hl_define" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(asc) | <a class="code hl_define" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb1) | <a class="code hl_define" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(ini));</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>}</div>
 </div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment">/* Private macro cleanup logic depends on this include being here,</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment"> * right above the closing endif of the header guard. DO NOT MOVE.</span></div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/d30/utf8__priv_8h.html">utf8_priv.h</a>&quot;</span></div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="preprocessor">#endif </span><span class="comment">/* !__cplusplus */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="preprocessor">#endif </span><span class="comment">/* CUTF8_SRC_UTF8_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructutf8_html"><div class="ttname"><a href="../../d8/d41/structutf8.html">utf8</a></div><div class="ttdoc">UTF-8 parser object.</div><div class="ttdef"><b>Definition</b> utf8.h:149</div></div>
-<div class="ttc" id="autf8_8h_html_a13cadf1c6bc58917e49bba116639c060"><div class="ttname"><a href="../../db/d7c/utf8_8h.html#a13cadf1c6bc58917e49bba116639c060">utf8_result</a></div><div class="ttdeci">static utf8_force_inline char const * utf8_result(struct utf8 const *const u8p)</div><div class="ttdoc">Get the result of the last UTF-8 code point parsing operation.</div><div class="ttdef"><b>Definition</b> utf8.h:244</div></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="comment">/* Private macro cleanup logic depends on this include being here,</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="comment"> * right above the closing endif of the header guard. DO NOT MOVE.</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/d30/utf8__priv_8h.html">utf8_priv.h</a>&quot;</span></div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="preprocessor">#endif </span><span class="comment">/* !__cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="preprocessor">#endif </span><span class="comment">/* CUTF8_SRC_UTF8_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructutf8_html"><div class="ttname"><a href="../../d8/d41/structutf8.html">utf8</a></div><div class="ttdoc">UTF-8 parser object.</div><div class="ttdef"><b>Definition</b> utf8.h:151</div></div>
+<div class="ttc" id="autf8_8h_html_a13cadf1c6bc58917e49bba116639c060"><div class="ttname"><a href="../../db/d7c/utf8_8h.html#a13cadf1c6bc58917e49bba116639c060">utf8_result</a></div><div class="ttdeci">static utf8_force_inline char const * utf8_result(struct utf8 const *const u8p)</div><div class="ttdoc">Get the result of the last UTF-8 code point parsing operation.</div><div class="ttdef"><b>Definition</b> utf8.h:246</div></div>
 <div class="ttc" id="autf8_8h_html_a16258f2e7b9101da3cd999f7bca43c6a"><div class="ttname"><a href="../../db/d7c/utf8_8h.html#a16258f2e7b9101da3cd999f7bca43c6a">utf8_parse_next_code_point</a></div><div class="ttdeci">uint8_t const * utf8_parse_next_code_point(struct utf8 *u8p, uint8_t const *ptr)</div><div class="ttdoc">Parse the next UTF-8 code point from a byte buffer.</div><div class="ttdef"><b>Definition</b> utf8.c:320</div></div>
 <div class="ttc" id="autf8_8h_html_a19afc6c72c350c6d98bccf96ec4fa2c0"><div class="ttname"><a href="../../db/d7c/utf8_8h.html#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a></div><div class="ttdeci">utf8_st8</div><div class="ttdoc">UTF-8 parser state enumeration.</div><div class="ttdef"><b>Definition</b> utf8.h:75</div></div>
-<div class="ttc" id="autf8_8h_html_a1e6c734b500e25d2a2b989972c42f952"><div class="ttname"><a href="../../db/d7c/utf8_8h.html#a1e6c734b500e25d2a2b989972c42f952">utf8</a></div><div class="ttdeci">static utf8_const_inline struct utf8 utf8(void)</div><div class="ttdoc">UTF-8 parser object RAII initializer.</div><div class="ttdef"><b>Definition</b> utf8.h:160</div></div>
-<div class="ttc" id="autf8_8h_html_a4dc3dc7803c5ffbc90bd8336f48e0286"><div class="ttname"><a href="../../db/d7c/utf8_8h.html#a4dc3dc7803c5ffbc90bd8336f48e0286">utf8_expects_leading_byte</a></div><div class="ttdeci">static utf8_const_inline bool utf8_expects_leading_byte(struct utf8 const *const u8p)</div><div class="ttdoc">Check if the parser expects a leading byte or an ASCII byte.</div><div class="ttdef"><b>Definition</b> utf8.h:284</div></div>
+<div class="ttc" id="autf8_8h_html_a1e6c734b500e25d2a2b989972c42f952"><div class="ttname"><a href="../../db/d7c/utf8_8h.html#a1e6c734b500e25d2a2b989972c42f952">utf8</a></div><div class="ttdeci">static utf8_const_inline struct utf8 utf8(void)</div><div class="ttdoc">UTF-8 parser object RAII initializer.</div><div class="ttdef"><b>Definition</b> utf8.h:162</div></div>
+<div class="ttc" id="autf8_8h_html_a4dc3dc7803c5ffbc90bd8336f48e0286"><div class="ttname"><a href="../../db/d7c/utf8_8h.html#a4dc3dc7803c5ffbc90bd8336f48e0286">utf8_expects_leading_byte</a></div><div class="ttdeci">static utf8_const_inline bool utf8_expects_leading_byte(struct utf8 const *const u8p)</div><div class="ttdoc">Check if the parser expects a leading byte or an ASCII byte.</div><div class="ttdef"><b>Definition</b> utf8.h:286</div></div>
 <div class="ttc" id="autf8_8h_html_a603f3c4194f3707d3cb750a1f28be440"><div class="ttname"><a href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a></div><div class="ttdeci">#define utf8_bit(label)</div><div class="ttdoc">UTF-8 parser state bit flags.</div><div class="ttdef"><b>Definition</b> utf8.h:90</div></div>
 <div class="ttc" id="autf8_8h_html_a8b2e2ed91e97da12438b4223833a4f55"><div class="ttname"><a href="../../db/d7c/utf8_8h.html#a8b2e2ed91e97da12438b4223833a4f55">UTF8_PARSER_DESCRIPTOR</a></div><div class="ttdeci">#define UTF8_PARSER_DESCRIPTOR(F)</div><div class="ttdoc">UTF-8 parser states.</div><div class="ttdef"><b>Definition</b> utf8.h:47</div></div>
-<div class="ttc" id="autf8_8h_html_aa9f1a866289fec6008bb470f821fbc70"><div class="ttname"><a href="../../db/d7c/utf8_8h.html#aa9f1a866289fec6008bb470f821fbc70">utf8_reset</a></div><div class="ttdeci">static utf8_force_inline void utf8_reset(struct utf8 *const u8p)</div><div class="ttdoc">Clear a UTF-8 parser object.</div><div class="ttdef"><b>Definition</b> utf8.h:175</div></div>
-<div class="ttc" id="autf8_8h_html_aff264b79cf3e4fb33bc474db5e4cddb4"><div class="ttname"><a href="../../db/d7c/utf8_8h.html#aff264b79cf3e4fb33bc474db5e4cddb4">utf8_size</a></div><div class="ttdeci">static utf8_force_inline size_t utf8_size(struct utf8 const *const u8p)</div><div class="ttdoc">Get the intended size of the last UTF-8 code point.</div><div class="ttdef"><b>Definition</b> utf8.h:264</div></div>
+<div class="ttc" id="autf8_8h_html_aa9f1a866289fec6008bb470f821fbc70"><div class="ttname"><a href="../../db/d7c/utf8_8h.html#aa9f1a866289fec6008bb470f821fbc70">utf8_reset</a></div><div class="ttdeci">static utf8_force_inline void utf8_reset(struct utf8 *const u8p)</div><div class="ttdoc">Clear a UTF-8 parser object.</div><div class="ttdef"><b>Definition</b> utf8.h:177</div></div>
+<div class="ttc" id="autf8_8h_html_aff264b79cf3e4fb33bc474db5e4cddb4"><div class="ttname"><a href="../../db/d7c/utf8_8h.html#aff264b79cf3e4fb33bc474db5e4cddb4">utf8_size</a></div><div class="ttdeci">static utf8_force_inline size_t utf8_size(struct utf8 const *const u8p)</div><div class="ttdoc">Get the intended size of the last UTF-8 code point.</div><div class="ttdef"><b>Definition</b> utf8.h:266</div></div>
 <div class="ttc" id="autf8__compat_8h_html_aa20bdac741c95c8dd459f07f1235dc38"><div class="ttname"><a href="../../dd/d13/utf8__compat_8h.html#aa20bdac741c95c8dd459f07f1235dc38">utf8_fixed_enum</a></div><div class="ttdeci">#define utf8_fixed_enum(name, T)</div><div class="ttdoc">Polyfill for C23 fixed-type enum.</div><div class="ttdef"><b>Definition</b> utf8_compat.h:45</div></div>
 <div class="ttc" id="autf8__priv_8h_html"><div class="ttname"><a href="../../d3/d30/utf8__priv_8h.html">utf8_priv.h</a></div><div class="ttdoc">Including this private header before utf8.h prevents UTF8_PARSER_DESCRIPTOR from being undefined at t...</div></div>
 <div class="ttc" id="autf8__util_8h_html"><div class="ttname"><a href="../../d3/db6/utf8__util_8h.html">utf8_util.h</a></div></div>
