@@ -47,12 +47,14 @@ var NAVTREEINDEX0 =
 "df/d51/utf8_8c.html#ac449041e74a2c21544fd830f155e4e3e":[1,0,0,0,1],
 "df/d51/utf8_8c.html#ade2fffa3d537398d6d5417f295b72e98":[1,0,0,0,6],
 "df/d51/utf8_8c.html#ae4cb46e720ccadf20dbb726d772c4a28":[1,0,0,0,0],
+"df/d51/utf8_8c.html#aeaa381e6a2b02cfe17d69bb8d8fe13ab":[1,0,0,0,8],
 "dir_68267d1309a1af8e8297ef4c3efbcdba.html":[1,0,0],
 "files.html":[1,0],
 "globals.html":[1,1,0],
-"globals_defs.html":[1,1,3],
-"globals_enum.html":[1,1,2],
+"globals_defs.html":[1,1,4],
+"globals_enum.html":[1,1,3],
 "globals_func.html":[1,1,1],
+"globals_vars.html":[1,1,2],
 "index.html":[],
 "pages.html":[]
 };

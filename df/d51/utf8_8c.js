@@ -7,5 +7,6 @@ var utf8_8c =
     [ "utf8_push_to_cache", "df/d51/utf8_8c.html#a88d3887a81123a2c0c6352a19e565326", null ],
     [ "utf8_set_state", "df/d51/utf8_8c.html#a2595fe1f6c737899bc84d42622fe741c", null ],
     [ "utf8_st8_is_leading_byte", "df/d51/utf8_8c.html#ade2fffa3d537398d6d5417f295b72e98", null ],
-    [ "utf8_state_from_bit", "df/d51/utf8_8c.html#a9c1edbb5a6244588c9c417b42ea55d25", null ]
+    [ "utf8_state_from_bit", "df/d51/utf8_8c.html#a9c1edbb5a6244588c9c417b42ea55d25", null ],
+    [ "utf8_lut", "df/d51/utf8_8c.html#aeaa381e6a2b02cfe17d69bb8d8fe13ab", null ]
 ];
