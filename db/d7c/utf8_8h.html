@@ -204,13 +204,14 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="comment">/* ╭───────────────────────────────enumeration                                              */</span> \</div>
-<div class="line"><span class="comment">/* │      ╭────────────────────────label                                                    */</span> \</div>
-<div class="line"><span class="comment">/* │      │    ╭───────────────────size                                                     */</span> \</div>
-<div class="line"><span class="comment">/* │      │    │     ╭─────────────start                                                    */</span> \</div>
-<div class="line"><span class="comment">/* │      │    │     │    ╭────────run                                                      */</span> \</div>
-<div class="line"><span class="comment">/* │      │    │     │    │  ╭─────skip                                                     */</span> \</div>
-<div class="line"><span class="comment">/* │      │    │     │    │  │  ╭──run                                                      */</span> \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="comment">/*  _______________________________enumeration                                              */</span> \</div>
+<div class="line"><span class="comment">/* /       ________________________label                                                    */</span> \</div>
+<div class="line"><span class="comment">/* |      /     ___________________size                                                     */</span> \</div>
+<div class="line"><span class="comment">/* |      |    /      _____________start                                                    */</span> \</div>
+<div class="line"><span class="comment">/* |      |    |     /     ________run                                                      */</span> \</div>
+<div class="line"><span class="comment">/* |      |    |     |    /   _____skip                                                     */</span> \</div>
+<div class="line"><span class="comment">/* |      |    |     |    |  /   __run                                                      */</span> \</div>
+<div class="line"><span class="comment">/* |      |    |     |    |  |  /                                                           */</span> \</div>
 <div class="line">F( 0,  asc,    1, 0x01, 127, 0, 0) <span class="comment">/* ASCII - never followed by continuation byte 0x80-0xbf */</span> \</div>
 <div class="line">F( 1,  lb2,    2, 0xc2,  30, 0, 0) <span class="comment">/* start of 2-byte sequence, any continuation may follow */</span> \</div>
 <div class="line">F( 2,  lb3_e0, 3, 0xe0,   1, 0, 0) <span class="comment">/* start of 3-byte sequence, next byte must be 0xa0-0xbf */</span> \</div>
@@ -296,7 +297,7 @@ Enumerations</h2></td></tr>
 <div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4)                   \</div>
 <div class="line">                      | <a class="code hl_define" href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4_f4),               \</div>
 <div class="line">}</div>
-<div class="ttc" id="autf8_8h_html_a603f3c4194f3707d3cb750a1f28be440"><div class="ttname"><a href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a></div><div class="ttdeci">#define utf8_bit(label)</div><div class="ttdoc">UTF-8 parser state bit flags.</div><div class="ttdef"><b>Definition</b> utf8.h:90</div></div>
+<div class="ttc" id="autf8_8h_html_a603f3c4194f3707d3cb750a1f28be440"><div class="ttname"><a href="#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a></div><div class="ttdeci">#define utf8_bit(label)</div><div class="ttdoc">UTF-8 parser state bit flags.</div><div class="ttdef"><b>Definition</b> utf8.h:91</div></div>
 </div><!-- fragment -->
 <p>Define a lookup table describing allowed state transitions from each state, using state enums for keys and sets of state flags for values. </p>
 <dl class="section note"><dt>Note</dt><dd>The baked-in type declaration is <span class="tt">uint16_t[16]</span> with no type qualifiers; prepend more as needed (e.g. <span class="tt">const</span>, <span class="tt">static</span>, etc.).</dd>
