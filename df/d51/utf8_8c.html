@@ -102,20 +102,20 @@ Include dependency graph for utf8.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9c1edbb5a6244588c9c417b42ea55d25" id="r_a9c1edbb5a6244588c9c417b42ea55d25"><td class="memItemLeft">static <a class="el" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a> int&#160;</td><td class="memItemRight"><a class="el" href="#a9c1edbb5a6244588c9c417b42ea55d25">utf8_state_from_bit</a> (uint16_t bit)</td></tr>
-<tr class="memdesc:a9c1edbb5a6244588c9c417b42ea55d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a parser state from a bit flag representation to the corresponding parser state enumeration.  <br /></td></tr>
-<tr class="memitem:a943de7246c664f580461c95800991e02" id="r_a943de7246c664f580461c95800991e02"><td class="memItemLeft">static <a class="el" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> bool&#160;</td><td class="memItemRight"><a class="el" href="#a943de7246c664f580461c95800991e02">utf8_get_state</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *const u8p, enum <a class="el" href="../../db/d7c/utf8_8h.html#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> *const st8)</td></tr>
-<tr class="memdesc:a943de7246c664f580461c95800991e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the parser's current state as a state enumeration.  <br /></td></tr>
-<tr class="memitem:ac449041e74a2c21544fd830f155e4e3e" id="r_ac449041e74a2c21544fd830f155e4e3e"><td class="memItemLeft">static <a class="el" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a> uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#ac449041e74a2c21544fd830f155e4e3e">utf8_get_allowed_next_states</a> (enum <a class="el" href="../../db/d7c/utf8_8h.html#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> st8)</td></tr>
-<tr class="memdesc:ac449041e74a2c21544fd830f155e4e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a mask of state flags comprising the states allowed after <span class="tt">st8</span>.  <br /></td></tr>
-<tr class="memitem:ae4cb46e720ccadf20dbb726d772c4a28" id="r_ae4cb46e720ccadf20dbb726d772c4a28"><td class="memItemLeft">static <a class="el" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a> bool&#160;</td><td class="memItemRight"><a class="el" href="#ae4cb46e720ccadf20dbb726d772c4a28">utf8_done</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> const *const u8p)</td></tr>
-<tr class="memdesc:ae4cb46e720ccadf20dbb726d772c4a28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the UTF-8 parser has finished processing a character.  <br /></td></tr>
-<tr class="memitem:ade2fffa3d537398d6d5417f295b72e98" id="r_ade2fffa3d537398d6d5417f295b72e98"><td class="memItemLeft">static <a class="el" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a> bool&#160;</td><td class="memItemRight"><a class="el" href="#ade2fffa3d537398d6d5417f295b72e98">utf8_st8_is_leading_byte</a> (enum <a class="el" href="../../db/d7c/utf8_8h.html#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> st8)</td></tr>
-<tr class="memdesc:ade2fffa3d537398d6d5417f295b72e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a parser state enumeration represents a UTF-8 leading byte or an ASCII byte.  <br /></td></tr>
-<tr class="memitem:a88d3887a81123a2c0c6352a19e565326" id="r_a88d3887a81123a2c0c6352a19e565326"><td class="memItemLeft">static <a class="el" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a88d3887a81123a2c0c6352a19e565326">utf8_push_to_cache</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *const u8p, enum <a class="el" href="../../db/d7c/utf8_8h.html#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> st8, uint8_t byte)</td></tr>
-<tr class="memdesc:a88d3887a81123a2c0c6352a19e565326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a byte to a specific position inside the parser cache.  <br /></td></tr>
-<tr class="memitem:a2595fe1f6c737899bc84d42622fe741c" id="r_a2595fe1f6c737899bc84d42622fe741c"><td class="memItemLeft">static <a class="el" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> bool&#160;</td><td class="memItemRight"><a class="el" href="#a2595fe1f6c737899bc84d42622fe741c">utf8_set_state</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *const u8p, enum <a class="el" href="../../db/d7c/utf8_8h.html#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> *const st8, uint8_t byte)</td></tr>
-<tr class="memdesc:a2595fe1f6c737899bc84d42622fe741c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the UTF-8 parser state and cache based on an input byte.  <br /></td></tr>
+<tr class="memitem:a624f8abebb0e9bf3c14bf36e3754eed7" id="r_a624f8abebb0e9bf3c14bf36e3754eed7"><td class="memItemLeft"><a class="el" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a> int&#160;</td><td class="memItemRight"><a class="el" href="#a624f8abebb0e9bf3c14bf36e3754eed7">utf8_state_from_bit</a> (uint16_t bit)</td></tr>
+<tr class="memdesc:a624f8abebb0e9bf3c14bf36e3754eed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a parser state from a bit flag representation to the corresponding parser state enumeration.  <br /></td></tr>
+<tr class="memitem:a830e7898859c6f69dc2f4af61e6b865d" id="r_a830e7898859c6f69dc2f4af61e6b865d"><td class="memItemLeft"><a class="el" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> bool&#160;</td><td class="memItemRight"><a class="el" href="#a830e7898859c6f69dc2f4af61e6b865d">utf8_get_state</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *const u8p, enum <a class="el" href="../../db/d7c/utf8_8h.html#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> *const st8)</td></tr>
+<tr class="memdesc:a830e7898859c6f69dc2f4af61e6b865d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the parser's current state as a state enumeration.  <br /></td></tr>
+<tr class="memitem:af9a14d1ebc2e186023d77bd590b676cd" id="r_af9a14d1ebc2e186023d77bd590b676cd"><td class="memItemLeft"><a class="el" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a> uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#af9a14d1ebc2e186023d77bd590b676cd">utf8_get_allowed_next_states</a> (enum <a class="el" href="../../db/d7c/utf8_8h.html#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> st8)</td></tr>
+<tr class="memdesc:af9a14d1ebc2e186023d77bd590b676cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a mask of state flags comprising the states allowed after <span class="tt">st8</span>.  <br /></td></tr>
+<tr class="memitem:a97c94a9a7d046059fe816454151974ef" id="r_a97c94a9a7d046059fe816454151974ef"><td class="memItemLeft"><a class="el" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a> bool&#160;</td><td class="memItemRight"><a class="el" href="#a97c94a9a7d046059fe816454151974ef">utf8_done</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> const *const u8p)</td></tr>
+<tr class="memdesc:a97c94a9a7d046059fe816454151974ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the UTF-8 parser has finished processing a character.  <br /></td></tr>
+<tr class="memitem:a5777c44a4cb05c54e63a0840be8fb5b1" id="r_a5777c44a4cb05c54e63a0840be8fb5b1"><td class="memItemLeft"><a class="el" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a> bool&#160;</td><td class="memItemRight"><a class="el" href="#a5777c44a4cb05c54e63a0840be8fb5b1">utf8_st8_is_leading_byte</a> (enum <a class="el" href="../../db/d7c/utf8_8h.html#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> st8)</td></tr>
+<tr class="memdesc:a5777c44a4cb05c54e63a0840be8fb5b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a parser state enumeration represents a UTF-8 leading byte or an ASCII byte.  <br /></td></tr>
+<tr class="memitem:a042d5d9914ba86cb601934fbbee7164a" id="r_a042d5d9914ba86cb601934fbbee7164a"><td class="memItemLeft"><a class="el" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a042d5d9914ba86cb601934fbbee7164a">utf8_push_to_cache</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *const u8p, enum <a class="el" href="../../db/d7c/utf8_8h.html#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> st8, uint8_t byte)</td></tr>
+<tr class="memdesc:a042d5d9914ba86cb601934fbbee7164a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a byte to a specific position inside the parser cache.  <br /></td></tr>
+<tr class="memitem:a60ed5c6580088ebb76b1f201fff8ddd8" id="r_a60ed5c6580088ebb76b1f201fff8ddd8"><td class="memItemLeft"><a class="el" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> bool&#160;</td><td class="memItemRight"><a class="el" href="#a60ed5c6580088ebb76b1f201fff8ddd8">utf8_set_state</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *const u8p, enum <a class="el" href="../../db/d7c/utf8_8h.html#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> *const st8, uint8_t byte)</td></tr>
+<tr class="memdesc:a60ed5c6580088ebb76b1f201fff8ddd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the UTF-8 parser state and cache based on an input byte.  <br /></td></tr>
 <tr class="memitem:a79fdefa17e88a128d4b7e47f5c9b65e8" id="r_a79fdefa17e88a128d4b7e47f5c9b65e8"><td class="memItemLeft"><a id="a79fdefa17e88a128d4b7e47f5c9b65e8" name="a79fdefa17e88a128d4b7e47f5c9b65e8"></a>
 uint8_t const *&#160;</td><td class="memItemRight"><b>utf8_parse_next_code_point</b> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *const u8p, uint8_t const *ptr)</td></tr>
 </table><table class="memberdecls">
@@ -127,14 +127,11 @@ Variables</h2></td></tr>
 static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</b> [16] = { [utf8_asc ] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(asc) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb2) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3_e0) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3_ed) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4_f0) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4_f4), [utf8_lb2 ] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb1), [utf8_lb3_e0] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb2_e0), [utf8_lb3 ] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb2), [utf8_lb3_ed] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb2_ed), [utf8_lb4_f0] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb3_f0), [utf8_lb4 ] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb3), [utf8_lb4_f4] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb3_f4), [utf8_cb3_f4] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb2), [utf8_cb3 ] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb2), [utf8_cb3_f0] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb2), [utf8_cb2_ed] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb1), [utf8_cb2 ] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb1), [utf8_cb2_e0] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(cb1), [utf8_cb1 ] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(asc) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb2) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3_e0) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3_ed) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4_f0) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4_f4), [utf8_ini ] = <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(asc) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb2) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3_e0) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb3_ed) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4_f0) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4) | <a class="el" href="../../db/d7c/utf8_8h.html#a603f3c4194f3707d3cb750a1f28be440">utf8_bit</a>(lb4_f4), }</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="ae4cb46e720ccadf20dbb726d772c4a28" name="ae4cb46e720ccadf20dbb726d772c4a28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4cb46e720ccadf20dbb726d772c4a28">&#9670;&#160;</a></span>utf8_done()</h2>
+<a id="a97c94a9a7d046059fe816454151974ef" name="a97c94a9a7d046059fe816454151974ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c94a9a7d046059fe816454151974ef">&#9670;&#160;</a></span>utf8_done()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a> bool utf8_done </td>
@@ -143,11 +140,6 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Check if the UTF-8 parser has finished processing a character. </p>
@@ -164,14 +156,11 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
 
 </div>
 </div>
-<a id="ac449041e74a2c21544fd830f155e4e3e" name="ac449041e74a2c21544fd830f155e4e3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac449041e74a2c21544fd830f155e4e3e">&#9670;&#160;</a></span>utf8_get_allowed_next_states()</h2>
+<a id="af9a14d1ebc2e186023d77bd590b676cd" name="af9a14d1ebc2e186023d77bd590b676cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a14d1ebc2e186023d77bd590b676cd">&#9670;&#160;</a></span>utf8_get_allowed_next_states()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a> uint16_t utf8_get_allowed_next_states </td>
@@ -180,11 +169,6 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get a mask of state flags comprising the states allowed after <span class="tt">st8</span>. </p>
@@ -196,18 +180,15 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Mask of state flags representing the allowed states, or 0 if <span class="tt">st8</span> is not a valid state enumeration. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="#a2595fe1f6c737899bc84d42622fe741c">utf8_set_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#a60ed5c6580088ebb76b1f201fff8ddd8">utf8_set_state()</a>.</p>
 
 </div>
 </div>
-<a id="a943de7246c664f580461c95800991e02" name="a943de7246c664f580461c95800991e02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a943de7246c664f580461c95800991e02">&#9670;&#160;</a></span>utf8_get_state()</h2>
+<a id="a830e7898859c6f69dc2f4af61e6b865d" name="a830e7898859c6f69dc2f4af61e6b865d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a830e7898859c6f69dc2f4af61e6b865d">&#9670;&#160;</a></span>utf8_get_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> bool utf8_get_state </td>
@@ -220,11 +201,6 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
           <td class="paramtype">enum <a class="el" href="../../db/d7c/utf8_8h.html#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> *const</td>          <td class="paramname"><span class="paramname"><em>st8</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the parser's current state as a state enumeration. </p>
@@ -242,14 +218,11 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
 
 </div>
 </div>
-<a id="a88d3887a81123a2c0c6352a19e565326" name="a88d3887a81123a2c0c6352a19e565326"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88d3887a81123a2c0c6352a19e565326">&#9670;&#160;</a></span>utf8_push_to_cache()</h2>
+<a id="a042d5d9914ba86cb601934fbbee7164a" name="a042d5d9914ba86cb601934fbbee7164a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a042d5d9914ba86cb601934fbbee7164a">&#9670;&#160;</a></span>utf8_push_to_cache()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> void utf8_push_to_cache </td>
@@ -267,11 +240,6 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
           <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>byte</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Write a byte to a specific position inside the parser cache. </p>
@@ -287,18 +255,15 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="#a88d3887a81123a2c0c6352a19e565326">utf8_push_to_cache()</a>, and <a class="el" href="#a2595fe1f6c737899bc84d42622fe741c">utf8_set_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#a042d5d9914ba86cb601934fbbee7164a">utf8_push_to_cache()</a>, and <a class="el" href="#a60ed5c6580088ebb76b1f201fff8ddd8">utf8_set_state()</a>.</p>
 
 </div>
 </div>
-<a id="a2595fe1f6c737899bc84d42622fe741c" name="a2595fe1f6c737899bc84d42622fe741c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2595fe1f6c737899bc84d42622fe741c">&#9670;&#160;</a></span>utf8_set_state()</h2>
+<a id="a60ed5c6580088ebb76b1f201fff8ddd8" name="a60ed5c6580088ebb76b1f201fff8ddd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ed5c6580088ebb76b1f201fff8ddd8">&#9670;&#160;</a></span>utf8_set_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> bool utf8_set_state </td>
@@ -316,11 +281,6 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
           <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>byte</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Update the UTF-8 parser state and cache based on an input byte. </p>
@@ -335,18 +295,15 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if the state update was successful. If the update fails, sets utf8::error to <span class="tt">EILSEQ</span> and returns <span class="tt">false</span>. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="../../d8/d41/structutf8.html#a16258f2e7b9101da3cd999f7bca43c6a">utf8::utf8_parse_next_code_point()</a>, and <a class="el" href="#a2595fe1f6c737899bc84d42622fe741c">utf8_set_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d41/structutf8.html#a16258f2e7b9101da3cd999f7bca43c6a">utf8::utf8_parse_next_code_point()</a>, and <a class="el" href="#a60ed5c6580088ebb76b1f201fff8ddd8">utf8_set_state()</a>.</p>
 
 </div>
 </div>
-<a id="ade2fffa3d537398d6d5417f295b72e98" name="ade2fffa3d537398d6d5417f295b72e98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade2fffa3d537398d6d5417f295b72e98">&#9670;&#160;</a></span>utf8_st8_is_leading_byte()</h2>
+<a id="a5777c44a4cb05c54e63a0840be8fb5b1" name="a5777c44a4cb05c54e63a0840be8fb5b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5777c44a4cb05c54e63a0840be8fb5b1">&#9670;&#160;</a></span>utf8_st8_is_leading_byte()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a> bool utf8_st8_is_leading_byte </td>
@@ -355,11 +312,6 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Check if a parser state enumeration represents a UTF-8 leading byte or an ASCII byte. </p>
@@ -371,18 +323,15 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if <span class="tt">st8</span> is a leading byte or ASCII, otherwise <span class="tt">false</span>. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="#a88d3887a81123a2c0c6352a19e565326">utf8_push_to_cache()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#a042d5d9914ba86cb601934fbbee7164a">utf8_push_to_cache()</a>.</p>
 
 </div>
 </div>
-<a id="a9c1edbb5a6244588c9c417b42ea55d25" name="a9c1edbb5a6244588c9c417b42ea55d25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c1edbb5a6244588c9c417b42ea55d25">&#9670;&#160;</a></span>utf8_state_from_bit()</h2>
+<a id="a624f8abebb0e9bf3c14bf36e3754eed7" name="a624f8abebb0e9bf3c14bf36e3754eed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a624f8abebb0e9bf3c14bf36e3754eed7">&#9670;&#160;</a></span>utf8_state_from_bit()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../d3/db6/utf8__util_8h.html#aa95581e4c6ce5c2cb17bfec6fbe35d1b">utf8_const_inline</a> int utf8_state_from_bit </td>
@@ -391,11 +340,6 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Convert a parser state from a bit flag representation to the corresponding parser state enumeration. </p>
@@ -408,7 +352,7 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An enumeration if <span class="tt">bit</span> is a valid parser state flag, otherwise -1. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="#a943de7246c664f580461c95800991e02">utf8_get_state()</a>, and <a class="el" href="#a2595fe1f6c737899bc84d42622fe741c">utf8_set_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#a830e7898859c6f69dc2f4af61e6b865d">utf8_get_state()</a>, and <a class="el" href="#a60ed5c6580088ebb76b1f201fff8ddd8">utf8_set_state()</a>.</p>
 
 </div>
 </div>
@@ -471,7 +415,7 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
 </div><!-- fragment -->
 <p>Lookup table. </p>
 
-<p class="reference">Referenced by <a class="el" href="#a2595fe1f6c737899bc84d42622fe741c">utf8_set_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#a60ed5c6580088ebb76b1f201fff8ddd8">utf8_set_state()</a>.</p>
 
 </div>
 </div>
