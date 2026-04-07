@@ -116,8 +116,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:a88d3887a81123a2c0c6352a19e565326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a byte to a specific position inside the parser cache.  <br /></td></tr>
 <tr class="memitem:a2595fe1f6c737899bc84d42622fe741c" id="r_a2595fe1f6c737899bc84d42622fe741c"><td class="memItemLeft">static <a class="el" href="../../d3/db6/utf8__util_8h.html#a23af8fabc7e8db3dd4220c905e723226">utf8_force_inline</a> bool&#160;</td><td class="memItemRight"><a class="el" href="#a2595fe1f6c737899bc84d42622fe741c">utf8_set_state</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *const u8p, enum <a class="el" href="../../db/d7c/utf8_8h.html#a19afc6c72c350c6d98bccf96ec4fa2c0">utf8_st8</a> *const st8, uint8_t byte)</td></tr>
 <tr class="memdesc:a2595fe1f6c737899bc84d42622fe741c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the UTF-8 parser state and cache based on an input byte.  <br /></td></tr>
-<tr class="memitem:a79fdefa17e88a128d4b7e47f5c9b65e8" id="r_a79fdefa17e88a128d4b7e47f5c9b65e8"><td class="memItemLeft">uint8_t const *&#160;</td><td class="memItemRight"><a class="el" href="#a79fdefa17e88a128d4b7e47f5c9b65e8">utf8_parse_next_code_point</a> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *const u8p, uint8_t const *ptr)</td></tr>
-<tr class="memdesc:a79fdefa17e88a128d4b7e47f5c9b65e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the next UTF-8 code point from a byte buffer.  <br /></td></tr>
+<tr class="memitem:a79fdefa17e88a128d4b7e47f5c9b65e8" id="r_a79fdefa17e88a128d4b7e47f5c9b65e8"><td class="memItemLeft"><a id="a79fdefa17e88a128d4b7e47f5c9b65e8" name="a79fdefa17e88a128d4b7e47f5c9b65e8"></a>
+uint8_t const *&#160;</td><td class="memItemRight"><b>utf8_parse_next_code_point</b> (struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *const u8p, uint8_t const *ptr)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -160,7 +160,7 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if the parser has finished processing a character, otherwise <span class="tt">false</span>. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="#a79fdefa17e88a128d4b7e47f5c9b65e8">utf8_parse_next_code_point()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d41/structutf8.html#a16258f2e7b9101da3cd999f7bca43c6a">utf8::utf8_parse_next_code_point()</a>.</p>
 
 </div>
 </div>
@@ -238,48 +238,7 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> on success. On failure sets ut8::error to <span class="tt">ENOTRECOVERABLE</span> and returns <span class="tt">false</span>. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="#a79fdefa17e88a128d4b7e47f5c9b65e8">utf8_parse_next_code_point()</a>.</p>
-
-</div>
-</div>
-<a id="a79fdefa17e88a128d4b7e47f5c9b65e8" name="a79fdefa17e88a128d4b7e47f5c9b65e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79fdefa17e88a128d4b7e47f5c9b65e8">&#9670;&#160;</a></span>utf8_parse_next_code_point()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t const  * utf8_parse_next_code_point </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="../../d8/d41/structutf8.html">utf8</a> *</td>          <td class="paramname"><span class="paramname"><em>u8p</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t const *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Parse the next UTF-8 code point from a byte buffer. </p>
-<p>Consumes up to 4 bytes of UTF-8 encoded input until a code point is assembled or an error occurs. Returns the address of the next byte after the consumed bytes.</p>
-<p>On valid input <span class="tt">u8p-&gt;error</span> is assigned 0 and the address of the next byte after the parsed code point is returned. The parsed code point's value (as UTF-8) can be retrieved by calling <a class="el" href="../../db/d7c/utf8_8h.html#a13cadf1c6bc58917e49bba116639c060" title="utf8_result()">utf8_result()</a> and its byte size with <a class="el" href="../../db/d7c/utf8_8h.html#aff264b79cf3e4fb33bc474db5e4cddb4" title="utf8_size()">utf8_size()</a>.</p>
-<p>On invalid input <span class="tt">u8p-&gt;error</span> is assigned <span class="tt">EILSEQ</span> and the address of the first invalid byte is returned (implying that invalid input is never consumed).</p>
-<p>A null byte is treated like any ASCII value, i.e. valid if <a class="el" href="../../db/d7c/utf8_8h.html#a4dc3dc7803c5ffbc90bd8336f48e0286" title="utf8_expects_leading_byte()">utf8_expects_leading_byte()</a> returns <span class="tt">true</span> before the null byte is encountered. More specifically:</p><ul>
-<li>in the initial parser state (utf8_ini), or</li>
-<li>after consuming an ASCII byte (utf8_asc), or</li>
-<li>after consuming the last continuation byte of a multi-byte sequence (utf8_cb1). In this situation the null byte is consumed, <span class="tt">u8p-&gt;error</span> is assigned 0, and the address of the next byte after the null byte is returned.</li>
-</ul>
-<p>If a null byte is encountered in any other situation it is an illegal byte inside a multi-byte sequence. In this case <span class="tt">u8p-&gt;error</span> is assigned <span class="tt">EILSEQ</span> and the address of the null byte is returned (i.e. the null byte is not consumed).</p>
-<p>If the content of <span class="tt">u8p-&gt;state</span> is corrupt, <span class="tt">u8p-&gt;error</span> is assigned <span class="tt">ENOTRECOVERABLE</span> and the original value of <span class="tt">ptr</span> is returned. This is a serious error that should not occur under normal circumstances. If this happens there is a bug in the caller code or a memory corruption issue. No parsing is performed in this case.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">u8p</td><td>A pointer to the UTF-8 parser object. Must not be null. </td></tr>
-    <tr><td class="paramname">ptr</td><td>A pointer to the input buffer. Must not be null. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the byte immediately after the parsed code point, or a pointer to the first invalid byte if malformed input is encountered. </dd></dl>
+<p class="reference">Referenced by <a class="el" href="../../d8/d41/structutf8.html#a16258f2e7b9101da3cd999f7bca43c6a">utf8::utf8_parse_next_code_point()</a>.</p>
 
 </div>
 </div>
@@ -376,7 +335,7 @@ static constexpr const uint16_t&#160;</td><td class="memItemRight"><b>utf8_dst</
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if the state update was successful. If the update fails, sets utf8::error to <span class="tt">EILSEQ</span> and returns <span class="tt">false</span>. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="#a79fdefa17e88a128d4b7e47f5c9b65e8">utf8_parse_next_code_point()</a>, and <a class="el" href="#a2595fe1f6c737899bc84d42622fe741c">utf8_set_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d8/d41/structutf8.html#a16258f2e7b9101da3cd999f7bca43c6a">utf8::utf8_parse_next_code_point()</a>, and <a class="el" href="#a2595fe1f6c737899bc84d42622fe741c">utf8_set_state()</a>.</p>
 
 </div>
 </div>
