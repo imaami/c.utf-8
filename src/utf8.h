@@ -156,7 +156,10 @@ struct utf8 {
 
 /**
  * @brief UTF-8 parser object RAII initializer.
+ *
  * @return A UTF-8 parser object by value.
+ *
+ * @public @memberof utf8
  */
 static utf8_const_inline
 struct utf8 utf8 (void)
@@ -170,7 +173,10 @@ struct utf8 utf8 (void)
 
 /**
  * @brief Clear a UTF-8 parser object.
+ *
  * @param u8p Pointer to parser object.
+ *
+ * @public @memberof utf8
  */
 utf8_nonnull_in
 static utf8_force_inline void
@@ -225,6 +231,8 @@ utf8_reset (struct utf8 *const u8p)
  * @return A pointer to the byte immediately after the parsed
  *         code point, or a pointer to the first invalid byte
  *         if malformed input is encountered.
+ *
+ * @public @memberof utf8
  */
 utf8_nonnull_out
 extern uint8_t const *
@@ -240,6 +248,8 @@ utf8_parse_next_code_point (struct utf8   *u8p,
  *
  * @param u8p Pointer to the UTF-8 parser object.
  * @return A pointer to the UTF-8 encoded code point.
+ *
+ * @public @memberof utf8
  */
 utf8_nonnull_in utf8_nonnull_out
 static utf8_force_inline char const *
@@ -260,6 +270,8 @@ utf8_result (struct utf8 const *const u8p)
  *
  * @param u8p Pointer to the UTF-8 parser object.
  * @return The intended size of the last UTF-8 code point.
+ *
+ * @public @memberof utf8
  */
 utf8_nonnull_in
 static utf8_force_inline size_t
@@ -280,6 +292,8 @@ utf8_size (struct utf8 const *const u8p)
  *
  * @param u8p Pointer to the UTF-8 parser object.
  * @return `true` if the parser expects a leading byte or an ASCII byte.
+ *
+ * @public @memberof utf8
  */
 utf8_nonnull_in
 static utf8_const_inline bool
