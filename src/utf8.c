@@ -53,6 +53,9 @@ utf8_st8_name (enum utf8_st8 st8)
 
 //! @endcond
 
+/** @brief Lookup table
+ * @showinitializer
+ */
 constexpr static const uint16_t utf8_lut[] = {
 	X(128,utf8_bit(asc)  ), /* 0x00-0x7f */
 

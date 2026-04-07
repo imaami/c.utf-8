@@ -321,6 +321,17 @@ INCLUDE_PATH           =
 INCLUDE_FILE_PATTERNS  =
 PREDEFINED             = DOXYGEN=1 \
                          "__STDC_VERSION__=name : " \
+                         "X1(x)=x" \
+                         "X2(x)=x,x" \
+                         "X3(x)=x,x,x" \
+                         "X8(x)=x,x,x,x,x,x,x,x" \
+                         "X11(x)=X8(x),x,x,x" \
+                         "X12(x)=X11(x),x" \
+                         "X16(x)=X8(x),X8(x)" \
+                         "X30(x)=X16(x),X12(x),x,x" \
+                         "X32(x)=X16(x),X16(x)" \
+                         "X128(x)=X32(x),X32(x),X32(x),X32(x)" \
+                         "X(n,x)=X##n(x)" \
                          "XST8(n,m,...)=utf8_##m = n," \
                          "_Atomic(x)=_Atomic x" \
                          "__attribute__(x)= " \
