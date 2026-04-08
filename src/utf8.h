@@ -162,7 +162,7 @@ struct utf8 {
  *
  * @public @memberof utf8
  */
-static utf8_const_inline
+utf8_const_inline
 struct utf8 utf8 (void)
 {
 	return (struct utf8) {
@@ -180,7 +180,7 @@ struct utf8 utf8 (void)
  * @public @memberof utf8
  */
 utf8_nonnull_in
-static utf8_force_inline void
+utf8_force_inline void
 utf8_reset (struct utf8 *const u8p)
 {
 	*u8p = utf8();
@@ -253,7 +253,7 @@ utf8_parse_next_code_point (struct utf8   *u8p,
  * @public @memberof utf8
  */
 utf8_nonnull_in utf8_nonnull_out
-static utf8_force_inline char const *
+utf8_force_inline char const *
 utf8_result (struct utf8 const *const u8p)
 {
 	return (char const *)&u8p->cache[1];
@@ -275,7 +275,7 @@ utf8_result (struct utf8 const *const u8p)
  * @public @memberof utf8
  */
 utf8_nonnull_in
-static utf8_force_inline size_t
+utf8_force_inline size_t
 utf8_size (struct utf8 const *const u8p)
 {
 	return u8p->cache[0];
@@ -297,7 +297,7 @@ utf8_size (struct utf8 const *const u8p)
  * @public @memberof utf8
  */
 utf8_nonnull_in
-static utf8_const_inline bool
+utf8_const_inline bool
 utf8_expects_leading_byte (struct utf8 const *const u8p)
 {
 	return u8p->state & (utf8_bit(asc) | utf8_bit(cb1) | utf8_bit(ini));

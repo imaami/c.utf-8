@@ -54,7 +54,7 @@
 
 #include "utf8_graph.h"
 
-static utf8_const_inline size_t
+utf8_const_inline size_t
 saturated_add_uz (size_t a,
                   size_t b)
 {

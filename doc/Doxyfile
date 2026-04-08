@@ -336,8 +336,8 @@ PREDEFINED             = DOXYGEN=1 \
                          "_Atomic(x)=_Atomic x" \
                          "__attribute__(x)= " \
                          "inline:=inline " \
-                         "utf8_const_inline:=utf8_const_inline " \
-                         "utf8_force_inline:=utf8_force_inline " \
+                         "utf8_const_inline:=inline " \
+                         "utf8_force_inline:=inline " \
                          "utf8_nonnull_in:= " \
                          "utf8_nonnull_out:= "
 EXPAND_AS_DEFINED      = UTF8_GEN_V \

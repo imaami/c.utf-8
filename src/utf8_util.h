@@ -12,13 +12,13 @@
 
 /** @brief Instruct the compiler to always inline a function.
  */
-# define utf8_force_inline __attribute__((always_inline)) inline
+# define utf8_force_inline __attribute__((always_inline)) static inline
 
 /** @brief Instruct the compiler to always inline a function
  *         and to assume its return value is determined only
  *         by its arguments.
  */
-# define utf8_const_inline __attribute__((always_inline,const)) inline
+# define utf8_const_inline __attribute__((const)) utf8_force_inline
 
 /** @brief Assume that input pointer arguments are not null.
  */
@@ -29,8 +29,8 @@
 # define utf8_nonnull_out __attribute__((returns_nonnull))
 
 #else /* _MSC_VER */
-# define utf8_force_inline __forceinline
-# define utf8_const_inline __forceinline
+# define utf8_force_inline static __forceinline
+# define utf8_const_inline static __forceinline
 # define utf8_nonnull_in
 # define utf8_nonnull_out
 #endif /* _MSC_VER */

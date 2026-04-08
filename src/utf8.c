@@ -17,7 +17,7 @@
 #include "utf8_impl.h"
 
 #ifdef DEBUG
-static utf8_const_inline char const *
+utf8_const_inline char const *
 utf8_st8_name (enum utf8_st8 st8)
 {
 	constexpr static char const name[][8] = {
@@ -121,7 +121,7 @@ constexpr static const UTF8_PARSER_STATE_MAP(utf8_dst);
  * @return An enumeration if `bit` is a valid parser state flag,
  *         otherwise -1.
  */
-static utf8_const_inline int
+utf8_const_inline int
 utf8_state_from_bit (uint16_t bit)
 {
 	return bit && !(bit & (bit - 1U))
@@ -142,7 +142,7 @@ utf8_state_from_bit (uint16_t bit)
  *         `ENOTRECOVERABLE` and returns `false`.
  */
 utf8_nonnull_in
-static utf8_force_inline bool
+utf8_force_inline bool
 utf8_get_state (struct utf8 *const   u8p,
                 enum utf8_st8 *const st8)
 {
@@ -165,7 +165,7 @@ utf8_get_state (struct utf8 *const   u8p,
  * @return Mask of state flags representing the allowed states, or 0 if `st8`
  *         is not a valid state enumeration.
  */
-static utf8_const_inline uint16_t
+utf8_const_inline uint16_t
 utf8_get_allowed_next_states (enum utf8_st8 st8)
 {
 	if (!is_negative(st8) && st8 <= utf8_ini)
@@ -186,7 +186,7 @@ utf8_get_allowed_next_states (enum utf8_st8 st8)
  *         otherwise `false`.
  */
 utf8_nonnull_in
-static utf8_const_inline bool
+utf8_const_inline bool
 utf8_done (struct utf8 const *const u8p)
 {
 	return u8p->state & (utf8_bit(asc) | utf8_bit(cb1));
@@ -199,7 +199,7 @@ utf8_done (struct utf8 const *const u8p)
  * @param st8 The state enumeration to check.
  * @return `true` if `st8` is a leading byte or ASCII, otherwise `false`.
  */
-static utf8_const_inline bool
+utf8_const_inline bool
 utf8_st8_is_leading_byte (enum utf8_st8 st8)
 {
 	return st8 < (enum utf8_st8)8;
@@ -229,7 +229,7 @@ utf8_st8_is_leading_byte (enum utf8_st8 st8)
  * @param byte The byte to push into the cache.
  */
 __attribute__((nonnull(1)))
-static utf8_force_inline void
+utf8_force_inline void
 utf8_push_to_cache (struct utf8 *const u8p,
                     enum utf8_st8      st8,
                     uint8_t            byte)
@@ -292,7 +292,7 @@ utf8_push_to_cache (struct utf8 *const u8p,
  *         sets @ref utf8::error to `EILSEQ` and returns `false`.
  */
 __attribute__((nonnull(1,2)))
-static utf8_force_inline bool
+utf8_force_inline bool
 utf8_set_state (struct utf8 *const   u8p,
                 enum utf8_st8 *const st8,
                 uint8_t              byte)
