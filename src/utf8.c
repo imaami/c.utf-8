@@ -138,7 +138,7 @@ utf8_state_from_bit (uint16_t bit)
  *            without regard to its current state.
  * @param st8 Where to store the state enumeration on success.
  *            Not modified on failure. Must not be `nullptr`.
- * @return `true` on success. On failure sets @ref ut8::error to
+ * @return `true` on success. On failure sets @ref utf8::error to
  *         `ENOTRECOVERABLE` and returns `false`.
  */
 utf8_nonnull_in
